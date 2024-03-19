@@ -1,43 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Estilos base */
-body {
-  font-family: "Montserrat", sans-serif;
+body, html {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  width: 100%;
 }
 
 /* Barra de navegación */
 nav {
-  color: #fff;
-  background-color: #466d68;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
+  width: 100%;
   box-sizing: border-box;
 }
 
-img {
-  border-radius: 5px;
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #466d68;
+  color: #fff;
+}
+
+.logo img {
+  max-width: 100%;
   height: auto;
   padding: 5px;
 }
 
-/* Contenedor general */
-.container_select,
-.canvas_radar {
-  width: 90%;
-  margin: 20px auto;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+.titulo h1, .titulo h2 {
+  margin: 10px 0;
+}
+
+.titulo h1 {
+  font-size: 24px;
+}
+
+.titulo h2 {
+  font-size: 18px;
+}
+
+/* Estilo para el menú */
+.menu_bar {
+  width: 100%;
+  background-color: #3a5a57;
   box-sizing: border-box;
 }
 
-/* Estilos para el contenedor de selección */
+.menu_bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_bar ul li {
+  margin: 0 15px;
+}
+
+.menu_bar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.menu_bar ul li a:hover {
+  color: #aad4d3;
+}
+
+/* Estilos para contenedores y selecciones */
+.container_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .container_select {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
   background-color: #466d68;
   color: #fff;
   display: flex;
@@ -45,8 +93,8 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 label, select {
@@ -63,52 +111,30 @@ select {
   border-radius: 5px;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #fff;
-}
-
-h1 {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
-h2 {
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-/* Estilos para las tarjetas de las gráficas */
-.card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin: 12.5px; /* Espacio de 25px entre tarjetas ajustando el margen a la mitad */
-  width: 300px; /* Ancho fijo de 295px */
-  box-sizing: border-box;
-}
-
+/* Estilos para las tarjetas */
 .cards_grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-
-
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 12.5px;
+  width: calc(33.333% - 25px); /* Ajusta según la cantidad de columnas deseadas */
+  box-sizing: border-box;
+}
 
 @media (max-width: 768px) {
   .container_select {
-    justify-content: center;
-    padding: 10px;
-  }
-
-  select, label {
-    margin-top: 10px;
+    flex-direction: column;
   }
 
   .card {
-    margin: 12.5px auto; /* Ajusta el margen para mantener la consistencia en pantallas pequeñas */
+    width: 90%; /* Ajusta para pantallas pequeñas */
+    margin: 12.5px auto;
   }
 }
