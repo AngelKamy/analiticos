@@ -1,0 +1,33 @@
+  function crearGrafico(grupoEdad, valores, labels) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    const canvas = document.createElement('canvas');
+    card.appendChild(canvas);
+    cardsGrid.appendChild(card);
+    const ctx = canvas.getContext('2d');
+
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: grupoEdad,
+          data: valores,
+          fill: true,
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgb(255, 99, 132)',
+          pointBackgroundColor: 'rgb(255, 99, 132)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgb(255, 99, 132)'
+        }]
+      },
+      options: {
+        elements: {
+          line: {
+            borderWidth: 3
+          }
+        }
+      }
+    });
+  }

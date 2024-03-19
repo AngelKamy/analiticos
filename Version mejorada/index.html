@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coberturas Hidalgo</title>
+    <link rel="icon" href="https://puntomedio.mx/wp-content/uploads/2019/12/IMSS-logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/descarga.png" alt="logo_imss">
+        </div>
+        <div class="titulo">
+            <h1>Dashboard Analíticos OOAD Hidalgo</h1>
+            <hr>
+            <h2>Coordinación delegacional de información y analisis estratégico</h2>
+        </div>
+        <div>
+            <ul>
+                <li>Coberturas</li>
+                <li>indicadores</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container_page">
+        <div class="container_select">
+            <label for="anoSelect">Año</label>
+            <select id="anoSelect"></select>
+            <label for="mesSelect">Selecciona el mes</label>
+            <select id="mesSelect"></select>
+            <label for="unidadSelect">Selecciona una unidad médica:</label>
+            <select id="unidadSelect"></select>
+            <label for="grupoEdadSelect">Selecciona un grupo de edad:</label>
+            <select id="grupoEdadSelect">
+                <option value="todos">Todos los grupos de edad</option>
+            </select>
+        </div>
+        <div class="grid_container">
+            <div class="cards_grid" id="cardsGrid">
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/myscript.js"></script>
+</body>
+
+</html>

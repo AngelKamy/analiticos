@@ -1,0 +1,652 @@
+let datos = {
+  "2024": {
+    "Enero": [
+      {
+        "nombre": "HGZMF 6",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 84.93670886, 54.05063291, 95.48421053, 95.56962025, 98.5730725],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 80.57537399, 100, 100, 100, 100, 78.1275441],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 65.47756041, 100, 39.85040276, 95.93582888, 100, 75.82278481, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 51.23130035, 100, 54.6835443, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 57.81357883, 100, 21.5995397, 100, 58.56156502, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 31",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 82.46260069, 56.47871116, 58.48421053, 100, 84.78711162],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 93.429229, 100, 100, 100, 100, 70.40705563],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 55.29344074, 100, 38.31990794, 100, 100, 67.84810127, 68],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 50.64441887, 100, 55.67318757, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 70.48331415, 100, 31.09321059, 100, 61.72612198, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 32",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 86.01841197, 60.41426928, 88.72631579, 60.58688147, 84.26927503],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 100, 100, 100, 100, 100, 61.2890095],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 83.67088608, 100, 51.72612198, 100, 100, 100, 29.81818182],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 64.01611047, 100, 74.16570771, 14.54545455],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 83.91521197, 100, 41.07744108, 33.07964602, 75.4, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 27",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 74.03912543, 36.7433832, 81.33684211, 85.48906789, 77.18066743],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 86.23705409, 100, 100, 100, 100, 44.84396201],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 63.63636364, 100, 46.50172612, 85.50802139, 100, 75.40851554, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 52.35903337, 100, 53.33716916, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 71.15074799, 100, 23.09551208, 100, 78.44649022, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 3",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 81.13924051, 72.19792865, 65.78947368, 49.9424626, 82.88837745],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 89.22899885, 100, 100, 100, 100, 59.29443691],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 72.42807825, 100, 31.76064442, 87.9144385, 100, 92.69275029, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 55.17836594, 100, 63.6593786, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 82.48561565, 100, 29.37859609, 100, 82.08285386, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 34",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 82.0023015, 49.14844649, 46.37894737, 64.13118527, 68.15880322],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 83.70540852, 100, 100, 100, 100, 45.2917232],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 65.21288838, 100, 38.81472957, 69.46524064, 100, 73.141542, 19.63636364],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 52.07134638, 100, 53.77445339, 18.90909091],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 82.48561565, 100, 29.37859609, 100, 82.08285386, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 4",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 74.94821634, 61.2543153, 68.50526316, 43.93555811, 58.10126582],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 84.34982739, 100, 100, 100, 100, 84.17910448],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 66.66283084, 90.15151515, 30.60989643, 45.50802139, 100, 80.33371692, 10.90909091],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 53.88952819, 100, 57.05408516, 9.454545455],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 72.72727273, 100, 24.90218642, 100, 62.72727273, 37.81818182],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 7",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 80.32220944, 60.56386651, 16.95789474, 71.40391254, 71.5995397],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 73.70540852, 100, 100, 100, 100, 77.58480326],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 88.15880322, 100, 54.7410817, 94.9197861, 100, 100, 1.454545455],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 80.32220944, 100, 84.36133487, 0],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 70.32220944, 100, 33.78596087, 100, 70.86306099, 6.545454545],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 15",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 61.78365938, 52.16340621, 41.70526316, 49.90794016, 70.41426928],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 100, 100, 100, 100, 100, 52.51017639],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 66.72036824, 100, 32.57767549, 82.67379679, 100, 83.40621404, 5.454545455],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 51.80667434, 100, 57.67548907, 2.545454545],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 64.95972382, 100, 22.11737629, 100, 73.80897583, 15.27272727],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 29",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 56.36363636, 31.76064442, 64.97894737, 55.52359033, 50.88607595],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 74.23475259, 100, 100, 100, 100, 44.09769335],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 47.34177215, 54.58333333, 25.82278481, 91.17647059, 100, 58.5730725, 1.454545455],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 35.0287687, 83.49090909, 37.27272727, 0.727272727],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 65.58112773, 100, 26.7433832, 100, 62.42807825, 3.636363636],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "HGZMF 8",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 59.48216341, 36.24856157, 64.65263158, 52.87686997, 44.61449942],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 77.74453395, 100, 100, 100, 100, 52.56445047],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 64.95972382, 100, 37.82508631, 39.03743316, 100, 77.30724971, 1.090909091],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 58.89528193, 100, 62.79631761, 1.818181818],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 50.93210587, 100, 12.26697353, 100, 53.03797468, 2.181818182],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "HGZMF 1",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 63.98328691, 46.15696801, 70.02105263, 61.12334802, 59.06642729],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 89.14956012, 100, 100, 100, 100, 70.16393443],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 78.48101266, 100, 48.31223629, 75.6302521, 100, 91.13924051, 3.636363636],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 76.66666667, 100, 85.45454545, 4.545454545],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 78.48101266, 100, 37.97468354, 100, 78.98734177, 9.090909091],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 16",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 52.99194476, 36.16800921, 47.43157895, 60.24165708, 56.17951669],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 95.84579977, 100, 100, 100, 100, 56.03799186],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 52.02531646, 100, 40.36823936, 100, 100, 67.13463751, 4.727272727],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 42.38204833, 100, 48.95281933, 5.090909091],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 61.01265823, 100, 28.65362486, 100, 55.69620253, 37.45454545],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 26",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 55.0287687, 29.80437284, 47.11578947, 50.88607595, 63.4867664],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 60.2301496, 100, 100, 100, 100, 48.4531886],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 51.3118527, 93.10606061, 35.84579977, 100, 100, 62.66973533, 48],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 42.47410817, 100, 47.41081703, 51.27272727],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 64.67203682, 100, 21.28883774, 100, 67.68699655, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 35",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 75.22439586, 32.07134638, 52.84210526, 31.43843498, 36.3406214],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 68.15880322, 100, 100, 100, 100, 40.97693351],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 71.49597238, 100, 43.4867664, 100, 100, 90.65592635, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 57.9976985, 100, 67.46835443, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 78.61910242, 79.63176064, 11.53049482, 100, 95.07479862, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 18",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 54.77560414, 36.52474108, 35.03157895, 44.05063291, 45.3164557],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 54.18872267, 100, 100, 100, 100, 46.49932157],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 64.72957422, 100, 41.24280783, 98.98395722, 100, 75.97238205, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 57.41081703, 100, 62.61219793, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 68.10126582, 100, 14.30379747, 100, 75.46605293, 100],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 9",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 50.10356732, 26.65132336, 56.30526316, 38.35443038, 33.63636364],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 59.55120829, 100, 100, 100, 100, 40.12211669],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 58.07825086, 80.18939394, 32.66973533, 81.39037433, 99.63636364, 65.17836594, 68],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 51.8296893, 100, 51.40391254, 57.81818182],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 61.17376295, 100, 16.24856157, 100, 65.39700806, 39.63636364],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 37",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [7.8, 58.97583429, 37.37629459, 34.48421053, 58.36593786, 14.34982739],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [7.873684211, 52.77330265, 9.792865362, 9.228998849, 10.33371692, 100, 11.8046133],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [8.473684211, 59.96547756, 29.09090909, 9.735327963, 52.56684492, 100, 67.45684695, 0],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [7.147368421, 51.9447641, 100, 58.21634062, 0],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [11.18947368, 61.6570771, 10.13808976, 19.07940161, 100, 61.63406214, 0],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      },
+      {
+        "nombre": "UMF 25",
+        "gruposEdad": {
+          "Niño": {
+            "valores": [100, 18.69965478, 17.21518987, 3.242105263, 16.17951669, 17.51438435],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F"]
+          },
+          "Adolescente": {
+            "valores": [100, 21.19677791, 100, 100, 100, 29.87272727, 25.15603799],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          },
+          "Mujer": {
+            "valores": [100, 25.52359033, 42.00757576, 14.59148446, 49.89304813, 57.49090909, 30.86306099, 5.818181818],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G", "Campo H"]
+          },
+          "Hombre": {
+            "valores": [100, 20.47180667, 49.89090909, 22.19792865, 10.90909091],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E"]
+          },
+          "Adulto Mayor": {
+            "valores": [100, 42.62370541, 100, 17.34177215, 77.16363636, 36.96202532, 49.09090909],
+            "labels": ["Campo A", "Campo B", "Campo C", "Campo D", "Campo E", "Campo F", "Campo G"]
+          }
+        }
+      }
+    ]
+  }
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  const anoSelect = document.getElementById('anoSelect');
+  const mesSelect = document.getElementById('mesSelect');
+  const unidadSelect = document.getElementById('unidadSelect');
+  const grupoEdadSelect = document.getElementById('grupoEdadSelect');
+  const cardsGrid = document.getElementById('cardsGrid');
+
+  function initAnoSelect() {
+      anoSelect.add(new Option("Seleccione año", "", true, true));
+      Object.keys(datos).forEach(ano => {
+          anoSelect.add(new Option(ano, ano));
+      });
+  }
+
+  function obtenerColoresPorGrupoEdad(nombreGrupoEdad) {
+      let colores = {
+          backgroundColor: 'rgba(0, 0, 0, 0.2)',
+          borderColor: '#000000',
+      };
+
+      switch (nombreGrupoEdad) {
+          case 'Niño':
+              colores.backgroundColor = 'rgba(0, 255, 0, 0.2)';
+              colores.borderColor = '#008000';
+              break;
+          case 'Adolescente':
+              colores.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+              colores.borderColor = '#ff0000';
+              break;
+          case 'Mujer':
+              colores.backgroundColor = 'rgba(255, 192, 203, 0.2)';
+              colores.borderColor = '#ff69b4';
+              break;
+          case 'Hombre':
+              colores.backgroundColor = 'rgba(0, 0, 255, 0.2)';
+              colores.borderColor = '#0000ff';
+              break;
+          case 'Adulto mayor':
+              colores.backgroundColor = 'rgba(255, 165, 0, 0.2)';
+              colores.borderColor = '#ffa500';
+              break;
+      }
+
+      return colores;
+  }
+
+  function updateMesSelect() {
+      const anoSeleccionado = anoSelect.value;
+      mesSelect.innerHTML = '<option value="">Seleccione mes</option>';
+      if (anoSeleccionado) {
+          Object.keys(datos[anoSeleccionado]).forEach(mes => {
+              mesSelect.add(new Option(mes, mes));
+          });
+      }
+  }
+
+  function updateUnidadSelect() {
+      const anoSeleccionado = anoSelect.value;
+      const mesSeleccionado = mesSelect.value;
+      unidadSelect.innerHTML = '<option value="">Seleccione una unidad</option>';
+      if (anoSeleccionado && mesSeleccionado) {
+          datos[anoSeleccionado][mesSeleccionado].forEach(unidad => {
+              unidadSelect.add(new Option(unidad.nombre, unidad.nombre));
+          });
+      }
+  }
+
+  function updateGrupoEdadSelect() {
+      const anoSeleccionado = anoSelect.value;
+      const mesSeleccionado = mesSelect.value;
+      const unidadSeleccionada = unidadSelect.value;
+      grupoEdadSelect.innerHTML = '<option value="">Seleccione un grupo de edad</option><option value="todos">Todos los grupos de edad</option>';
+      if (anoSeleccionado && mesSeleccionado && unidadSeleccionada) {
+          const unidadDatos = datos[anoSeleccionado][mesSeleccionado].find(u => u.nombre === unidadSeleccionada);
+          Object.keys(unidadDatos.gruposEdad).forEach(grupo => {
+              grupoEdadSelect.add(new Option(grupo, grupo));
+          });
+      }
+  }
+
+  function actualizarGraficos() {
+      const anoSeleccionado = anoSelect.value;
+      const mesSeleccionado = mesSelect.value;
+      const unidadSeleccionada = unidadSelect.value;
+      const grupoEdadSeleccionado = grupoEdadSelect.value;
+      cardsGrid.innerHTML = '';
+
+      if (anoSeleccionado && mesSeleccionado && unidadSeleccionada && grupoEdadSeleccionado) {
+          const unidadDatos = datos[anoSeleccionado][mesSeleccionado].find(u => u.nombre === unidadSeleccionada);
+          if (grupoEdadSeleccionado === 'todos') {
+              Object.entries(unidadDatos.gruposEdad).forEach(([grupo, info]) => {
+                  crearGrafico(grupo, info, unidadSeleccionada);
+              });
+          } else {
+              const info = unidadDatos.gruposEdad[grupoEdadSeleccionado];
+              crearGrafico(grupoEdadSeleccionado, info, unidadSeleccionada);
+          }
+      }
+  }
+
+  function crearGrafico(grupoEdad, datosGrupoEdad, unidadMedica) {
+    const colores = obtenerColoresPorGrupoEdad(grupoEdad);
+
+    const cardDiv = document.createElement('div');
+    cardDiv.className = 'card';
+    cardsGrid.appendChild(cardDiv);
+
+    const canvas = document.createElement('canvas');
+    cardDiv.appendChild(canvas);
+    const ctx = canvas.getContext('2d');
+
+    const labelConUnidad = `${grupoEdad} - ${unidadMedica}`;
+
+    const data = {
+        labels: datosGrupoEdad.labels,
+        datasets: [{
+            label: labelConUnidad,
+            data: datosGrupoEdad.valores,
+            fill: true,
+            backgroundColor: colores.backgroundColor,
+            borderColor: colores.borderColor,
+            pointBackgroundColor: colores.borderColor,
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: colores.borderColor
+        }]
+    };
+    
+
+    const options = {
+        elements: {
+            line: {
+                borderWidth: 3,
+            }
+        },
+        scales: {
+            r: {
+                angleLines: {
+                    display: false
+                },
+                suggestedMin: 20,
+                suggestedMax: 100
+            }
+        },
+        plugins: {
+            legend: {
+                labels: {
+                    font: {
+                        family: 'Montserrat',
+                        size: 14
+                    }
+                }
+            }
+        }
+    };
+
+    new Chart(ctx, {
+        type: 'radar',
+        data: data,
+        options: options
+    });
+  }
+
+  anoSelect.addEventListener('change', updateMesSelect);
+  mesSelect.addEventListener('change', updateUnidadSelect);
+  unidadSelect.addEventListener('change', updateGrupoEdadSelect);
+  grupoEdadSelect.addEventListener('change', actualizarGraficos);
+
+  initAnoSelect();
+});
