@@ -124,7 +124,8 @@ select {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 12.5px;
-  width: calc(33.333% - 25px); /* Ajusta según la cantidad de columnas deseadas */
+  width: 250
+  px;; /* Ajusta según la cantidad de columnas deseadas */
   box-sizing: border-box;
 }
 
