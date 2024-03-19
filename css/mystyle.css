@@ -18,23 +18,34 @@ nav {
 
 .encabezado {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Ajustado para que el logo esté a un lado en pantallas grandes */
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
   width: 100%;
   background-color: #466d68;
   color: #fff;
+  padding: 10px 20px;
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 250px;
   height: auto;
   padding: 5px;
 }
 
-.titulo h1, .titulo h2 {
-  margin: 10px 0;
+.logo, .titulo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo {
+  margin-left: 20px;
+}
+
+.titulo h1, .titulo h2, .titulo hr {
+  margin: 5px 0;
 }
 
 .titulo h1 {
@@ -54,7 +65,7 @@ nav {
 
 .menu_bar ul {
   list-style-type: none;
-  padding: 0;
+  padding: 5px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -62,16 +73,23 @@ nav {
 
 .menu_bar ul li {
   margin: 0 15px;
+  padding: 1px, 20px;
+  border-radius: 5px;
 }
 
 .menu_bar ul li a {
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
+
 }
 
 .menu_bar ul li a:hover {
-  color: #aad4d3;
+  color: #3a5a57;
+  border-radius: 5px;
+  background-color:#FFFC90;
+ 
+ 
 }
 
 /* Estilos para contenedores y selecciones */
@@ -124,12 +142,26 @@ select {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 12.5px;
-  width: 250
-  px;; /* Ajusta según la cantidad de columnas deseadas */
+  width: 300px; /* Corregido */
   box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
+  .encabezado {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .logo, .titulo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulo {
+    margin-left: 0;
+  }
+
   .container_select {
     flex-direction: column;
   }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analíticos Hidalgo</title>
+    <title>Coberturas Hidalgo</title>
     <link rel="icon" href="https://puntomedio.mx/wp-content/uploads/2019/12/IMSS-logo.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="./css/mystyle.css">
@@ -24,14 +24,32 @@
         </div>
         <div class="menu_bar">
             <ul>
-                <li><a href="./index.html"></a></li>
                 <li><a href="./html/coberturas.html">Coberturas</a></li>
                 <li><a href="./html/indicadores.html">Indicadores</a></li>
             </ul>
         </div>
     </nav>
     
+    <div class="container_page">
+        <div class="container_select">
+            <label for="anoSelect">Año</label>
+            <select id="anoSelect"></select>
+            <label for="mesSelect">Selecciona el mes</label>
+            <select id="mesSelect"></select>
+            <label for="unidadSelect">Selecciona una unidad médica:</label>
+            <select id="unidadSelect"></select>
+            <label for="grupoEdadSelect">Selecciona un grupo de edad:</label>
+            <select id="grupoEdadSelect">
+                <option value="todos">Todos los grupos de edad</option>
+            </select>
+        </div>
+        <div class="grid_container">
+            <div class="cards_grid" id="cardsGrid">
+            </div>
+        </div>
+    </div>
 
+    <script src="./js/myscript.js"></script>
 </body>
 
 </html>
