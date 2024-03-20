@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Estilos base */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -18,7 +19,8 @@ nav {
 
 .encabezado {
   display: flex;
-  flex-direction: row; /* Ajustado para que el logo esté a un lado en pantallas grandes */
+  flex-direction: row;
+  /* Ajustado para que el logo esté a un lado en pantallas grandes */
   align-items: center;
   justify-content: flex-start;
   text-align: left;
@@ -34,7 +36,8 @@ nav {
   padding: 5px;
 }
 
-.logo, .titulo {
+.logo,
+.titulo {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +47,9 @@ nav {
   margin-left: 20px;
 }
 
-.titulo h1, .titulo h2, .titulo hr {
+.titulo h1,
+.titulo h2,
+.titulo hr {
   margin: 5px 0;
 }
 
@@ -87,10 +92,18 @@ nav {
 .menu_bar ul li a:hover {
   color: #3a5a57;
   border-radius: 5px;
-  background-color:#FFFC90;
- 
- 
+  background-color: #FFFC90;
+
+
 }
+
+#home:hover svg {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  /* Suaviza la transición */
+  background-color: #3a5a57;
+}
+
 
 /* Estilos para contenedores y selecciones */
 .container_page {
@@ -115,7 +128,8 @@ nav {
   box-sizing: border-box;
 }
 
-label, select {
+label,
+select {
   font-weight: bold;
   font-size: 14px;
   color: #fff;
@@ -142,18 +156,62 @@ select {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 12.5px;
-  width: 300px; /* Corregido */
+  width: 300px;
+  /* Corregido */
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+.main {
+  background-color: #ddd8cf;
+  background-size: 100%, 500px;
+  min-height: 695px;
+  /* Ajusta este valor según tus necesidades */
+  display: flex;
+  /* Habilita Flexbox */
+  flex-direction: column;
+  /* Organiza los hijos verticalmente */
+  justify-content: center;
+  /* Centra los hijos verticalmente */
+  align-items: center;
+  /* Centra los hijos horizontalmente */
+  text-align: center;
+  /* Asegura que el texto también esté centrado, aunque flex ya lo maneja */
+}
+
+.main h2 {
+  font-size: 56px;
+  color: #466d68;
+  margin: 20px 0;
+  /* Ajusta el espaciado según necesites */
+}
+
+.main hr {
+  width: 500px;
+  height: 5px;
+  background-color: #3a5a57;
+  border: none;
+  /* Elimina el borde por defecto para que se vea el color de fondo */
+  border-radius: 5px;
+  margin: 20px 0;
+  /* Ajusta según necesites */
+}
+
+.main h3 {
+  font-size: 40px;
+  color: #ddc9a3;
+  margin: 20px 0;
+  /* Ajusta según necesites */
+}
+
+@media (max-width: 915px) {
   .encabezado {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
 
-  .logo, .titulo {
+  .logo,
+  .titulo {
     display: flex;
     flex-direction: column;
   }
@@ -167,7 +225,28 @@ select {
   }
 
   .card {
-    width: 90%; /* Ajusta para pantallas pequeñas */
+    width: 90%;
+    /* Ajusta para pantallas pequeñas */
     margin: 12.5px auto;
+  }
+
+  .main h2 {
+    font-size: 44.8px;
+  }
+
+  .main hr {
+    width: 400px;
+  }
+
+  .main h3 {
+    font-size: 32px;
+  }
+
+}
+
+@media (max-width: 1316px) {
+  .cards_grid .card {
+    margin: 10px;
+    /* Esto proporciona 50px de espacio total en horizontal y vertical entre las tarjetas */
   }
 }
