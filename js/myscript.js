@@ -248,7 +248,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 65.58112773, 100, 26.7433832, 100, 62.42807825, 3.636363636],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -272,7 +273,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 50.93210587, 100, 12.26697353, 100, 53.03797468, 2.181818182],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -296,7 +298,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 78.48101266, 100, 37.97468354, 100, 78.98734177, 9.090909091],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -320,7 +323,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 61.01265823, 100, 28.65362486, 100, 55.69620253, 37.45454545],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -344,7 +348,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 64.67203682, 100, 21.28883774, 100, 67.68699655, 100],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -368,7 +373,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 78.61910242, 79.63176064, 11.53049482, 100, 95.07479862, 100],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -392,7 +398,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 68.10126582, 100, 14.30379747, 100, 75.46605293, 100],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -416,7 +423,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 61.17376295, 100, 16.24856157, 100, 65.39700806, 39.63636364],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -440,7 +448,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [11.18947368, 61.6570771, 10.13808976, 19.07940161, 100, 61.63406214, 0],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
         }
       },
       {
@@ -464,7 +473,8 @@ let datos = {
           },
           "Adulto Mayor": {
             "valores": [100, 42.62370541, 100, 17.34177215, 77.16363636, 36.96202532, 49.09090909],
-            "labels": ["1", "2", "3", "4", "5", "6", "7"]          }
+            "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          }
 
         }
       }]
@@ -476,6 +486,55 @@ document.addEventListener('DOMContentLoaded', function () {
   const unidadSelect = document.getElementById('unidadSelect');
   const grupoEdadSelect = document.getElementById('grupoEdadSelect');
   const cardsGrid = document.getElementById('cardsGrid');
+  const tarjetaDetalleInfo = document.getElementById('detalleInfo'); // Asume que existe este elemento en tu HTML
+  const textoDetalle = document.getElementById('textoDetalle'); // Asume que existe este elemento dentro de tarjetaDetalleInfo en tu HTML
+
+
+  const detalles = {
+    'Niño': [
+      "1. Incorporación a protocolos de atención preventiva",
+      "2. Medición de peso y talla < 5 años",
+      "3. Medición de peso y talla 5 a 9 años",
+      "4. Prevención de anemia < 1 año",
+      "5. Aplicación tópica de flúor en niños de 4 años",
+      "6. Defectos visuales"
+    ],
+    'Adolescente': [
+      "1. Incorporación a protocolos de atención preventiva",
+      "2. Medición de peso y talla",
+      "3. Toxoide tetánico diftérico",
+      "4. Hepatitis B",
+      "5. Sarampión / rubeola",
+      "6. Entrega informada de condones",
+      "7. Defectos visuales"
+    ],
+    'Mujer': [
+      "1. Incorporación a protocolos de atención preventiva",
+      "2. Medición de peso y talla",
+      "3. CACU 25 a 69 años",
+      "4. Exploración clínica de mama",
+      "5. Mastografía",
+      "6. Diabetes mellitus",
+      "7. Hipertensión arterial",
+      "8. Tuberculosis pulmonar"
+    ],
+    'Hombre': [
+      "1. Incorporación a protocolos de atención preventiva",
+      "2. Medición de peso y talla",
+      "3. Diabetes mellitus",
+      "4. Hipertensión arterial",
+      "5. Tuberculosis pulmonar"
+    ],
+    'Adulto Mayor': [
+      "1. Incorporación a protocolos de atención preventiva",
+      "2. Medición de peso y talla",
+      "3. Antineumocóccica",
+      "4. Anti influenza",
+      "5. Diabetes mellitus",
+      "6. Hipertensión arterial",
+      "7. Tuberculosis pulmonar"
+    ]
+  };
 
   function initAnoSelect() {
     anoSelect.add(new Option("Seleccione año", "", true, true));
@@ -572,7 +631,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function crearGrafico(grupoEdad, datosGrupoEdad, unidadMedica) {
     const colores = obtenerColoresPorGrupoEdad(grupoEdad);
-
     const cardDiv = document.createElement('div');
     cardDiv.className = 'card';
     cardsGrid.appendChild(cardDiv);
@@ -582,7 +640,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const ctx = canvas.getContext('2d');
 
     const labelConUnidad = `${grupoEdad} - ${unidadMedica}`;
-
     const data = {
       labels: datosGrupoEdad.labels,
       datasets: [{
@@ -598,11 +655,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }]
     };
 
-
     const options = {
       elements: {
         line: {
-          borderWidth: 3,
+          borderWidth: 3
         }
       },
       scales: {
@@ -631,12 +687,130 @@ document.addEventListener('DOMContentLoaded', function () {
       data: data,
       options: options
     });
+
+    // Manejo de eventos para mostrar información detallada
+    cardDiv.addEventListener('mouseenter', () => {
+      const detallesGrupo = detalles[grupoEdad] || [];
+      const detallesTexto = detallesGrupo.join(', ');
+      textoDetalle.textContent = `Información detallada para ${grupoEdad} en ${unidadMedica}: ${detallesTexto}.`;
+      tarjetaDetalleInfo.style.display = 'block';
+    });
+
+    cardDiv.addEventListener('mouseleave', () => {
+      tarjetaDetalleInfo.style.display = 'none';
+    });
   }
-
-  anoSelect.addEventListener('change', updateMesSelect);
+ anoSelect.addEventListener('change', updateMesSelect);
   mesSelect.addEventListener('change', updateUnidadSelect);
-  unidadSelect.addEventListener('change', updateGrupoEdadSelect);
-  grupoEdadSelect.addEventListener('change', actualizarGraficos);
+// Continuación desde la asignación de eventos para los selects de mes y unidad
+unidadSelect.addEventListener('change', updateGrupoEdadSelect);
+grupoEdadSelect.addEventListener('change', actualizarGraficos);
 
-  initAnoSelect();
-});
+// Fuera de la función DOMContentLoaded, se asume que ya hay elementos HTML con los ID 'detalleInfo' y 'textoDetalle'
+// que serán utilizados para mostrar los detalles al pasar el mouse sobre una tarjeta
+
+function actualizarGraficos() {
+  const anoSeleccionado = anoSelect.value;
+  const mesSeleccionado = mesSelect.value;
+  const unidadSeleccionada = unidadSelect.value;
+  const grupoEdadSeleccionado = grupoEdadSelect.value;
+  cardsGrid.innerHTML = '';
+
+  if (anoSeleccionado && mesSeleccionado && unidadSeleccionada && grupoEdadSeleccionado) {
+    const unidadDatos = datos[anoSeleccionado][mesSeleccionado].find(u => u.nombre === unidadSeleccionada);
+    if (grupoEdadSeleccionado === 'todos') {
+      Object.entries(unidadDatos.gruposEdad).forEach(([grupo, info]) => {
+        crearGrafico(grupo, info, unidadSeleccionada);
+      });
+    } else {
+      const info = unidadDatos.gruposEdad[grupoEdadSeleccionado];
+      crearGrafico(grupoEdadSeleccionado, info, unidadSeleccionada);
+    }
+  }
+}
+
+function crearGrafico(grupoEdad, datosGrupoEdad, unidadMedica) {
+  const colores = obtenerColoresPorGrupoEdad(grupoEdad);
+
+  const cardDiv = document.createElement('div');
+  cardDiv.className = 'card';
+  cardsGrid.appendChild(cardDiv);
+
+  const canvas = document.createElement('canvas');
+  cardDiv.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+
+  const labelConUnidad = `${grupoEdad} - ${unidadMedica}`;
+
+  const data = {
+    labels: datosGrupoEdad.labels,
+    datasets: [{
+      label: labelConUnidad,
+      data: datosGrupoEdad.valores,
+      fill: true,
+      backgroundColor: colores.backgroundColor,
+      borderColor: colores.borderColor,
+      pointBackgroundColor: colores.borderColor,
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: colores.borderColor
+    }]
+  };
+
+  const options = {
+    elements: {
+      line: {
+        borderWidth: 3
+      }
+    },
+    scales: {
+      r: {
+        angleLines: {
+          display: false
+        },
+        suggestedMin: 20,
+        suggestedMax: 100
+      }
+    },
+    plugins: {
+      legend: {
+        labels: {
+          font: {
+            family: 'Montserrat',
+            size: 14
+          }
+        }
+      }
+    }
+  };
+
+  new Chart(ctx, {
+    type: 'radar',
+    data: data,
+    options: options
+  });
+
+  // Referencia a los elementos de detalles fuera del evento 'DOMContentLoaded'
+  const tarjetaDetalleInfo = document.getElementById('detalleInfo');
+  const textoDetalle = document.getElementById('textoDetalle');
+
+  cardDiv.addEventListener('mouseenter', () => {
+    const detallesGrupo = detalles[grupoEdad] || [];
+    const detallesTexto = detallesGrupo.join(', ');
+    textoDetalle.textContent = `Información detallada para ${grupoEdad} en ${unidadMedica}: ${detallesTexto}.`;
+    tarjetaDetalleInfo.style.display = 'block';
+  });
+
+  cardDiv.addEventListener('mouseleave', () => {
+    tarjetaDetalleInfo.style.display = 'none';
+  });
+}
+
+// Llama a las funciones iniciales para configurar los elementos de selección y visualización
+initAnoSelect();
+updateMesSelect();
+updateUnidadSelect();
+updateGrupoEdadSelect();
+actualizarGraficos();
+
+})
