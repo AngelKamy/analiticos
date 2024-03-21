@@ -204,7 +204,8 @@ select {
 }
 
 #detalleInfo {
-  background-color: #fff;
+  background-color: #3a5a577c;
+  color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 2px 25px;
@@ -212,6 +213,7 @@ select {
   position: fixed; /* O absolute, según el contexto */
   bottom: 0; /* Ajusta esto según dónde quieras que aparezca */
   left: 0;
+  height: 220px;
   width: 500px; /* Ancho máximo de la ventana del navegador */
   z-index: 1000; /* Asegúrate de que se sobreponga a otros elementos */
   display: none; /* Oculto inicialmente */

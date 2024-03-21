@@ -797,7 +797,7 @@ function crearGrafico(grupoEdad, datosGrupoEdad, unidadMedica) {
   cardDiv.addEventListener('mouseenter', () => {
     const detallesGrupo = detalles[grupoEdad] || [];
     const detallesTexto = detallesGrupo.join(', ');
-    textoDetalle.textContent = `Información detallada para ${grupoEdad} en ${unidadMedica}: ${detallesTexto}.`;
+    textoDetalle.textContent = `${unidadMedica}: ${grupoEdad}  ${detallesTexto}.`;
     tarjetaDetalleInfo.style.display = 'block';
   });
 
