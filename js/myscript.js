@@ -551,24 +551,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     switch (nombreGrupoEdad) {
       case 'Niño':
-        colores.backgroundColor = 'rgba(0, 255, 0, 0.2)';
-        colores.borderColor = '#008000';
+        colores.backgroundColor = 'rgba(35, 155, 86, 0.2)';
+        colores.borderColor = '#239B56';
         break;
       case 'Adolescente':
-        colores.backgroundColor = 'rgba(255, 0, 0, 0.2)';
-        colores.borderColor = '#ff0000';
+        colores.backgroundColor = 'rgba(31, 97, 141, 0.2)';
+        colores.borderColor = '#1F618D';
         break;
       case 'Mujer':
-        colores.backgroundColor = 'rgba(255, 192, 203, 0.2)';
-        colores.borderColor = '#ff69b4';
+        colores.backgroundColor = 'rgba(192, 57, 43 , 0.2)';
+        colores.borderColor = '#C0392B';
         break;
       case 'Hombre':
-        colores.backgroundColor = 'rgba(0, 0, 255, 0.2)';
-        colores.borderColor = '#0000ff';
+        colores.backgroundColor = 'rgba(86, 101, 115, 0.2)';
+        colores.borderColor = '#566573';
         break;
-      case 'Adulto mayor':
-        colores.backgroundColor = 'rgba(255, 165, 0, 0.2)';
-        colores.borderColor = '#ffa500';
+      case 'Adulto Mayor':
+        colores.backgroundColor = 'rgba(243, 156, 18 , 0.2)';
+        colores.borderColor = '#F39C12';
         break;
     }
 
@@ -690,118 +690,118 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   }
- anoSelect.addEventListener('change', updateMesSelect);
+  anoSelect.addEventListener('change', updateMesSelect);
   mesSelect.addEventListener('change', updateUnidadSelect);
-// Continuación desde la asignación de eventos para los selects de mes y unidad
-unidadSelect.addEventListener('change', updateGrupoEdadSelect);
-grupoEdadSelect.addEventListener('change', actualizarGraficos);
+  // Continuación desde la asignación de eventos para los selects de mes y unidad
+  unidadSelect.addEventListener('change', updateGrupoEdadSelect);
+  grupoEdadSelect.addEventListener('change', actualizarGraficos);
 
-// Fuera de la función DOMContentLoaded, se asume que ya hay elementos HTML con los ID 'detalleInfo' y 'textoDetalle'
-// que serán utilizados para mostrar los detalles al pasar el mouse sobre una tarjeta
+  // Fuera de la función DOMContentLoaded, se asume que ya hay elementos HTML con los ID 'detalleInfo' y 'textoDetalle'
+  // que serán utilizados para mostrar los detalles al pasar el mouse sobre una tarjeta
 
-function actualizarGraficos() {
-  const anoSeleccionado = anoSelect.value;
-  const mesSeleccionado = mesSelect.value;
-  const unidadSeleccionada = unidadSelect.value;
-  const grupoEdadSeleccionado = grupoEdadSelect.value;
-  cardsGrid.innerHTML = '';
+  function actualizarGraficos() {
+    const anoSeleccionado = anoSelect.value;
+    const mesSeleccionado = mesSelect.value;
+    const unidadSeleccionada = unidadSelect.value;
+    const grupoEdadSeleccionado = grupoEdadSelect.value;
+    cardsGrid.innerHTML = '';
 
-  if (anoSeleccionado && mesSeleccionado && unidadSeleccionada && grupoEdadSeleccionado) {
-    const unidadDatos = datos[anoSeleccionado][mesSeleccionado].find(u => u.nombre === unidadSeleccionada);
-    if (grupoEdadSeleccionado === 'todos') {
-      Object.entries(unidadDatos.gruposEdad).forEach(([grupo, info]) => {
-        crearGrafico(grupo, info, unidadSeleccionada);
-      });
-    } else {
-      const info = unidadDatos.gruposEdad[grupoEdadSeleccionado];
-      crearGrafico(grupoEdadSeleccionado, info, unidadSeleccionada);
+    if (anoSeleccionado && mesSeleccionado && unidadSeleccionada && grupoEdadSeleccionado) {
+      const unidadDatos = datos[anoSeleccionado][mesSeleccionado].find(u => u.nombre === unidadSeleccionada);
+      if (grupoEdadSeleccionado === 'todos') {
+        Object.entries(unidadDatos.gruposEdad).forEach(([grupo, info]) => {
+          crearGrafico(grupo, info, unidadSeleccionada);
+        });
+      } else {
+        const info = unidadDatos.gruposEdad[grupoEdadSeleccionado];
+        crearGrafico(grupoEdadSeleccionado, info, unidadSeleccionada);
+      }
     }
   }
-}
 
-function crearGrafico(grupoEdad, datosGrupoEdad, unidadMedica) {
-  const colores = obtenerColoresPorGrupoEdad(grupoEdad);
+  function crearGrafico(grupoEdad, datosGrupoEdad, unidadMedica) {
+    const colores = obtenerColoresPorGrupoEdad(grupoEdad);
 
-  const cardDiv = document.createElement('div');
-  cardDiv.className = 'card';
-  cardsGrid.appendChild(cardDiv);
+    const cardDiv = document.createElement('div');
+    cardDiv.className = 'card';
+    cardsGrid.appendChild(cardDiv);
 
-  const canvas = document.createElement('canvas');
-  cardDiv.appendChild(canvas);
-  const ctx = canvas.getContext('2d');
+    const canvas = document.createElement('canvas');
+    cardDiv.appendChild(canvas);
+    const ctx = canvas.getContext('2d');
 
-  const labelConUnidad = `${grupoEdad} - ${unidadMedica}`;
+    const labelConUnidad = `${grupoEdad} - ${unidadMedica}`;
 
-  const data = {
-    labels: datosGrupoEdad.labels,
-    datasets: [{
-      label: labelConUnidad,
-      data: datosGrupoEdad.valores,
-      fill: true,
-      backgroundColor: colores.backgroundColor,
-      borderColor: colores.borderColor,
-      pointBackgroundColor: colores.borderColor,
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: colores.borderColor
-    }]
-  };
+    const data = {
+      labels: datosGrupoEdad.labels,
+      datasets: [{
+        label: labelConUnidad,
+        data: datosGrupoEdad.valores,
+        fill: true,
+        backgroundColor: colores.backgroundColor,
+        borderColor: colores.borderColor,
+        pointBackgroundColor: colores.borderColor,
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: colores.borderColor
+      }]
+    };
 
-  const options = {
-    elements: {
-      line: {
-        borderWidth: 3
-      }
-    },
-    scales: {
-      r: {
-        angleLines: {
-          display: false
-        },
-        suggestedMin: 20,
-        suggestedMax: 100
-      }
-    },
-    plugins: {
-      legend: {
-        labels: {
-          font: {
-            family: 'Montserrat',
-            size: 14
+    const options = {
+      elements: {
+        line: {
+          borderWidth: 3
+        }
+      },
+      scales: {
+        r: {
+          angleLines: {
+            display: false
+          },
+          suggestedMin: 10,
+          suggestedMax: 100
+        }
+      },
+      plugins: {
+        legend: {
+          labels: {
+            font: {
+              family: 'Montserrat',
+              size: 14
+            }
           }
         }
       }
-    }
-  };
+    };
 
-  new Chart(ctx, {
-    type: 'radar',
-    data: data,
-    options: options
-  });
+    new Chart(ctx, {
+      type: 'radar',
+      data: data,
+      options: options
+    });
 
-  // Referencia a los elementos de detalles fuera del evento 'DOMContentLoaded'
-  const tarjetaDetalleInfo = document.getElementById('detalleInfo');
-  const textoDetalle = document.getElementById('textoDetalle');
+    // Referencia a los elementos de detalles fuera del evento 'DOMContentLoaded'
+    const tarjetaDetalleInfo = document.getElementById('detalleInfo');
+    const textoDetalle = document.getElementById('textoDetalle');
 
-  cardDiv.addEventListener('mouseenter', () => {
-    const detallesGrupo = detalles[grupoEdad] || [];
-    // Usamos map para envolver cada detalle en un elemento de lista <li>
-    const detallesTexto = detallesGrupo.map(detalle => `<li>${detalle}</li>`).join('');
-    // Encapsulamos los detallesTexto en un elemento <ul> para formar una lista completa
-    textoDetalle.innerHTML = `${unidadMedica}: ${grupoEdad}<ul>${detallesTexto}</ul>`;
-    tarjetaDetalleInfo.style.display = 'block';
-});
-  cardDiv.addEventListener('mouseleave', () => {
-    tarjetaDetalleInfo.style.display = 'none';
-  });
-}
+    cardDiv.addEventListener('mouseenter', () => {
+      const detallesGrupo = detalles[grupoEdad] || [];
+      // Usamos map para envolver cada detalle en un elemento de lista <li>
+      const detallesTexto = detallesGrupo.map(detalle => `<li>${detalle}</li>`).join('');
+      // Encapsulamos los detallesTexto en un elemento <ul> para formar una lista completa
+      textoDetalle.innerHTML = `${unidadMedica}: <br> ${grupoEdad}<ul>${detallesTexto}</ul>`;
+      tarjetaDetalleInfo.style.display = 'block';
+    });
+    cardDiv.addEventListener('mouseleave', () => {
+      tarjetaDetalleInfo.style.display = 'none';
+    });
+  }
 
-// Llama a las funciones iniciales para configurar los elementos de selección y visualización
-initAnoSelect();
-updateMesSelect();
-updateUnidadSelect();
-updateGrupoEdadSelect();
-actualizarGraficos();
+  // Llama a las funciones iniciales para configurar los elementos de selección y visualización
+  initAnoSelect();
+  updateMesSelect();
+  updateUnidadSelect();
+  updateGrupoEdadSelect();
+  actualizarGraficos();
 
 })
