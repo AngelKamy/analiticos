@@ -688,17 +688,7 @@ document.addEventListener('DOMContentLoaded', function () {
       options: options
     });
 
-    // Manejo de eventos para mostrar información detallada
-    cardDiv.addEventListener('mouseenter', () => {
-      const detallesGrupo = detalles[grupoEdad] || [];
-      const detallesTexto = detallesGrupo.join(', ');
-      textoDetalle.textContent = `Información detallada para ${grupoEdad} en ${unidadMedica}: ${detallesTexto}.`;
-      tarjetaDetalleInfo.style.display = 'block';
-    });
 
-    cardDiv.addEventListener('mouseleave', () => {
-      tarjetaDetalleInfo.style.display = 'none';
-    });
   }
  anoSelect.addEventListener('change', updateMesSelect);
   mesSelect.addEventListener('change', updateUnidadSelect);
@@ -796,11 +786,12 @@ function crearGrafico(grupoEdad, datosGrupoEdad, unidadMedica) {
 
   cardDiv.addEventListener('mouseenter', () => {
     const detallesGrupo = detalles[grupoEdad] || [];
-    const detallesTexto = detallesGrupo.join(', ');
-    textoDetalle.textContent = `${unidadMedica}: ${grupoEdad}  ${detallesTexto}.`;
+    // Usamos map para envolver cada detalle en un elemento de lista <li>
+    const detallesTexto = detallesGrupo.map(detalle => `<li>${detalle}</li>`).join('');
+    // Encapsulamos los detallesTexto en un elemento <ul> para formar una lista completa
+    textoDetalle.innerHTML = `${unidadMedica}: ${grupoEdad}<ul>${detallesTexto}</ul>`;
     tarjetaDetalleInfo.style.display = 'block';
-  });
-
+});
   cardDiv.addEventListener('mouseleave', () => {
     tarjetaDetalleInfo.style.display = 'none';
   });
