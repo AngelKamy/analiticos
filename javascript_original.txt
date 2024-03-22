@@ -682,3 +682,4 @@ document.addEventListener('DOMContentLoaded', function () {
   // Inicialización de los componentes
   initAnoSelect();
 });
+

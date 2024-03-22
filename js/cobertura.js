@@ -24,6 +24,10 @@ let datos = {
           "Adulto Mayor": {
             "valores": [100, 57.81357883, 100, 21.5995397, 100, 58.56156502, 100],
             "labels": ["1", "2", "3", "4", "5", "6", "7"]
+          },
+          "Toda la Unidad": {
+            "valores": [99.62105263, 67.87111623, 42.33601841, 55, 57.0310702],
+            "labels": ["1", "2", "3", "4", "5"],
           }
         }
       },
@@ -477,7 +481,9 @@ let datos = {
           }
 
         }
-      }]
+      },
+
+    ]
   }
 }
 document.addEventListener('DOMContentLoaded', function () {
@@ -486,8 +492,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const unidadSelect = document.getElementById('unidadSelect');
   const grupoEdadSelect = document.getElementById('grupoEdadSelect');
   const cardsGrid = document.getElementById('cardsGrid');
-  const tarjetaDetalleInfo = document.getElementById('detalleInfo'); // Asume que existe este elemento en tu HTML
-  const textoDetalle = document.getElementById('textoDetalle'); // Asume que existe este elemento dentro de tarjetaDetalleInfo en tu HTML
 
 
   const detalles = {
@@ -533,7 +537,15 @@ document.addEventListener('DOMContentLoaded', function () {
       "5. Diabetes mellitus",
       "6. Hipertensión arterial",
       "7. Tuberculosis pulmonar"
+    ],
+    'Toda la Unidad':[
+      "1. Niño",
+      "2. Adolescente",
+      "3. Mujer",
+      "4. Hombre",
+      "5. Adulto Mayor"
     ]
+
   };
 
   function initAnoSelect() {
@@ -569,6 +581,10 @@ document.addEventListener('DOMContentLoaded', function () {
       case 'Adulto Mayor':
         colores.backgroundColor = 'rgba(243, 156, 18 , 0.2)';
         colores.borderColor = '#F39C12';
+        break;
+      case 'Toda la Unidad':
+        colores.backgroundColor = 'rgba(181,70,252,0.2)';
+        colores.borderColor = '#5B2C6F';
         break;
     }
 
