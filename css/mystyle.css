@@ -219,6 +219,10 @@ select {
   display: none; /* Oculto inicialmente */
 }
 
+.valor_detalle{
+  color: #FFFC90;
+  font-weight: bolder;
+}
 
 @media (max-width: 915px) {
   .encabezado {
