@@ -1,9 +1,6 @@
 import { datos } from './datos.js';
 import { detalles } from './detalles.js';
 
-console.log(datos); // Ahora puedes usar el objeto JSON como cualquier otro objeto en JS
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const anoSelect = document.getElementById('anoSelect');
   const mesSelect = document.getElementById('mesSelect');
