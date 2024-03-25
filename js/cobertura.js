@@ -583,8 +583,8 @@ document.addEventListener('DOMContentLoaded', function () {
         colores.borderColor = '#F39C12';
         break;
       case 'Toda la Unidad':
-        colores.backgroundColor = 'rgba(181,70,252,0.2)';
-        colores.borderColor = '#5B2C6F';
+        colores.backgroundColor = 'rgba(181,70,252,0.75)';
+        colores.borderColor = '#FF00B4';
         break;
     }
 

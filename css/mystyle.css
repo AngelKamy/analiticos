@@ -214,7 +214,7 @@ select {
   bottom: 0; /* Ajusta esto según dónde quieras que aparezca */
   left: 0;
   height: 220px;
-  width: 950px; /* Ancho máximo de la ventana del navegador */
+  width: 550px; /* Ancho máximo de la ventana del navegador */
   z-index: 1000; /* Asegúrate de que se sobreponga a otros elementos */
   display: none; /* Oculto inicialmente */
 }
