@@ -86,6 +86,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 scales: {
                     x: {
                         beginAtZero: true,
+                        ticks: {
+                            // Define el intervalo entre las marcas de graduación del eje X
+                            stepSize: 2
+                        }
                     },
                     y: {
                         ticks: {

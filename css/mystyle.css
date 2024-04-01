@@ -232,8 +232,9 @@ select {
 #productividadChart {
   height: auto;
   /* Altura automática basada en el contenido */
-  min-height: 400px;
+  min-height:00px;
   /* Establece una altura mínima si es necesario */
+ 
 }
 
 @media (max-width: 915px) {
