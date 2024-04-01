@@ -39,77 +39,95 @@ document.addEventListener('DOMContentLoaded', function () {
         const ano = anoSelect.value;
         const mes = mesSelect.value;
         const datos = datosProductividad[ano][mes];
-
+    
         datos.sort((a, b) => b["Productividad chequeo PREVENIMSS"] - a["Productividad chequeo PREVENIMSS"]);
-
+    
         if (chart) {
             chart.destroy(); // Destruye el gráfico anterior para una nueva generación
         }
-
+    
+        // Genera un array de colores basado en los criterios específicos
+        const backgroundColors = datos.map(item => {
+            const valor = item["Productividad chequeo PREVENIMSS"];
+            if (valor > 20) return 'rgba(246, 25, 21)'; // Rojo
+            else if (valor >= 14) return 'rgba(40, 180, 99)'; // Verde
+            else return 'rgba(253, 250, 53)'; // Amarillo
+        });
+    
+        const borderColors = datos.map(item => {
+            const valor = item["Productividad chequeo PREVENIMSS"];
+            if (valor > 20) return 'rgba(246, 25, 21)'; // Rojo
+            else if (valor >= 14) return 'rgba(40, 180, 99)'; // Verde
+            else return 'rgba(253, 250, 53)'; // Amarillo
+        });
+    
         chart = new Chart(ctx, {
-    type: 'bar', // Se mantiene 'bar' para ambos tipos de gráficos
-    data: {
-        labels: datos.map(item => item.unidad), // Unidades como labels
-        datasets: [{
-            label: 'Productividad chequeo PREVENIMSS',
-            data: datos.map(item => item["Productividad chequeo PREVENIMSS"]), // Datos de productividad
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1
-        }]
-    },
-    options: {
-        layout: {
-            padding: {
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0
-            }
-        },
-        indexAxis: 'y',
-        scales: {
-            x: {
-                beginAtZero: true,
+            type: 'bar',
+            data: {
+                labels: datos.map(item => item.unidad),
+                datasets: [{
+                    label: 'Productividad chequeo PREVENIMSS',
+                    data: datos.map(item => item["Productividad chequeo PREVENIMSS"]),
+                    backgroundColor: backgroundColors,
+                    borderColor: borderColors,
+                    borderWidth: 2
+                }]
             },
-            y: { // Ajustes para el eje Y dado que es el índice en barras horizontales
-                ticks: {
-                    autoSkip: false,
-                    maxRotation: 0,
-                    minRotation: 0
+            options: {
+                layout: {
+                    padding: {
+                        left: 0,
+                        right: 0,
+                        top: 0,
+                        bottom: 0
+                    }
                 },
-                barThickness: 80, // Aumenta este valor para hacer las barras más gruesas
-            }
-        },
-        plugins: {
-            annotation: {
-                annotations: {
-                    lineX20: {
-                        type: 'line',
-                        xMin: 20,
-                        xMax: 20,
-                        borderColor: 'rgb(255, 99, 132)', // Un color visible claro
-                        borderWidth: 1.5, // Un grosor claramente visible
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
                     },
-                    lineX14: {
-                        type: 'line',
-                        xMin: 14,
-                        xMax: 14,
-                        borderColor: " black",
-                        borderWidth: 1,
-                        borderDash: [5,2]
+                    y: {
+                        ticks: {
+                            autoSkip: false,
+                            maxRotation: 0,
+                            minRotation: 0
+                        },
+                        barThickness: 20, // Ajusta según necesidad
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: {
+                                family: 'Montserrat' // Aplica la fuente Montserrat a la leyenda
+                            }
+                        }
+                    },
+                    annotation: {
+                        annotations: {
+                            lineX20: {
+                                type: 'line',
+                                xMin: 20,
+                                xMax: 20,
+                                borderColor: 'rgb(255, 99, 132)',
+                                borderWidth: 1.5,
+                            },
+                            lineX14: {
+                                type: 'line',
+                                xMin: 14,
+                                xMax: 14,
+                                borderColor: "black",
+                                borderWidth: 1,
+                                borderDash: [5, 5]
+                            }
+                        }
                     }
                 }
             }
-        }
-        
-
+        });
     }
     
-    
-});
-
-    }
 
     // Inicialización inicial del gráfico
     actualizarGrafico();
