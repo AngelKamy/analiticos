@@ -7,6 +7,7 @@
     <title>Analíticos Hidalgo</title>
     <link rel="icon" href="https://puntomedio.mx/wp-content/uploads/2019/12/IMSS-logo.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.0"></script>
     <link rel="stylesheet" href="../css/mystyle.css">
 </head>
 
@@ -40,23 +41,29 @@
     <div class="container_page">
         <div class="container_select">
             <label for="anoSelect">Año</label>
-            <select id="anoSelect"></select>
-            <label for="mesSelect">Selecciona el mes</label>
-            <select id="mesSelect"></select>
-            <label for="unidadSelect">Selecciona una unidad médica:</label>
-            <select id="unidadSelect"></select>
-            <label for="grupoEdadSelect">Selecciona un grupo de edad:</label>
-            <select id="grupoEdadSelect">
-                <option value="todos">Todos los grupos de edad</option>
+            <select id="anoSelect">
+                <!-- Las opciones se llenarán dinámicamente -->
             </select>
+            <label for="mesSelect">mes</label>
+            <select id="mesSelect">
+                <!-- Las opciones se llenarán dinámicamente -->
+            </select>
+
+            <label for="indicadorSelect">Indicador</label>
+            <select id="indicadorSelect">
+                
+            </select>
+
         </div>
         <div class="grid_container">
-            <div class="cards_grid" id="cardsGrid">
+            <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                <canvas id="productividadChart"></canvas>
             </div>
+            <!-- Otros contenedores si son necesarios -->
         </div>
     </div>
 
-    <script src="../js/myscript.js"></script>
+    <script type="module" src="../js/indicadores.js"></script>
 </body>
 
 </html>

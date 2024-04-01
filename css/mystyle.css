@@ -210,18 +210,30 @@ select {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 25px;
   margin: 15px;
-  position: fixed; /* O absolute, según el contexto */
-  bottom: 0; /* Ajusta esto según dónde quieras que aparezca */
+  position: fixed;
+  /* O absolute, según el contexto */
+  bottom: 0;
+  /* Ajusta esto según dónde quieras que aparezca */
   left: 0;
   height: 220px;
-  width: 550px; /* Ancho máximo de la ventana del navegador */
-  z-index: 1000; /* Asegúrate de que se sobreponga a otros elementos */
-  display: none; /* Oculto inicialmente */
+  width: 550px;
+  /* Ancho máximo de la ventana del navegador */
+  z-index: 1000;
+  /* Asegúrate de que se sobreponga a otros elementos */
+  display: none;
+  /* Oculto inicialmente */
 }
 
-.valor_detalle{
+.valor_detalle {
   color: #FFFC90;
   font-weight: bolder;
+}
+
+#productividadChart {
+  height: auto;
+  /* Altura automática basada en el contenido */
+  min-height: 400px;
+  /* Establece una altura mínima si es necesario */
 }
 
 @media (max-width: 915px) {
