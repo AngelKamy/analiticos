@@ -3,21 +3,28 @@ import { datosProductividad } from "./JSONprod.js";
 document.addEventListener('DOMContentLoaded', function () {
     const anoSelect = document.getElementById('anoSelect');
     const mesSelect = document.getElementById('mesSelect');
+    const indicadorSelect = document.getElementById('indicadorSelect');
     const ctx = document.getElementById('productividadChart').getContext('2d');
     let chart;
 
-    // Cargar años
+    // Cargar años y luego meses
     cargarAnos();
+    cargarIndicadores(); // Llamamos a cargar indicadores aquí para llenar el select después de cargar años
 
     // Event listeners para los selects
     anoSelect.addEventListener('change', () => {
         cargarMeses();
+        cargarIndicadores();
         actualizarGrafico();
     });
 
-    mesSelect.addEventListener('change', actualizarGrafico);
+    mesSelect.addEventListener('change', () => {
+        cargarIndicadores();
+        actualizarGrafico();
+    });
 
-    // Funciones para cargar los selects y actualizar el gráfico
+    indicadorSelect.addEventListener('change', actualizarGrafico);
+
     function cargarAnos() {
         Object.keys(datosProductividad).forEach(ano => {
             let option = new Option(ano, ano);
@@ -35,39 +42,62 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function actualizarGrafico() {
+    // Nuevo método para cargar indicadores basados en el año y mes seleccionados
+    function cargarIndicadores() {
         const ano = anoSelect.value;
         const mes = mesSelect.value;
         const datos = datosProductividad[ano][mes];
-    
-        datos.sort((a, b) => b["Productividad chequeo PREVENIMSS"] - a["Productividad chequeo PREVENIMSS"]);
-    
+        const indicadores = new Set(); // Usamos un Set para evitar indicadores duplicados
+
+        indicadorSelect.innerHTML = ''; // Limpiamos los indicadores existentes antes de cargar los nuevos
+
+        datos.forEach(item => {
+            Object.keys(item.indicador).forEach(indicador => {
+                indicadores.add(indicador);
+            });
+        });
+
+        indicadores.forEach(indicador => {
+            let option = new Option(indicador, indicador);
+            indicadorSelect.add(option);
+        });
+    }
+
+    function actualizarGrafico() {
+        const ano = anoSelect.value;
+        const mes = mesSelect.value;
+        const indicadorSeleccionado = indicadorSelect.value;
+        const datos = datosProductividad[ano][mes];
+
+        // Modificación principal para adaptar a la nueva estructura de datos
+        // Actualización de la línea de sort para ser dinámica
+        datos.sort((a, b) => b.indicador[indicadorSeleccionado] - a.indicador[indicadorSeleccionado]);
+
+
         if (chart) {
             chart.destroy(); // Destruye el gráfico anterior para una nueva generación
         }
-    
-        // Genera un array de colores basado en los criterios específicos
-        const backgroundColors = datos.map(item => {
-            const valor = item["Productividad chequeo PREVENIMSS"];
-            if (valor > 20) return 'rgba(246, 25, 21)'; // Rojo
-            else if (valor >= 14) return 'rgba(40, 180, 99)'; // Verde
-            else return 'rgba(253, 250, 53)'; // Amarillo
+
+        const datosFiltrados = datos.map(item => ({
+            unidad: item.unidad,
+            valor: item.indicador[indicadorSeleccionado] || 0
+        }));
+
+        const backgroundColors = datosFiltrados.map(item => {
+            if (item.valor > 20) return 'rgba(246, 25, 21)';
+            else if (item.valor >= 14) return 'rgba(40, 180, 99)';
+            else return 'rgba(253, 250, 53)';
         });
-    
-        const borderColors = datos.map(item => {
-            const valor = item["Productividad chequeo PREVENIMSS"];
-            if (valor > 20) return 'rgba(246, 25, 21)'; // Rojo
-            else if (valor >= 14) return 'rgba(40, 180, 99)'; // Verde
-            else return 'rgba(253, 250, 53)'; // Amarillo
-        });
-    
+
+        const borderColors = backgroundColors;
+
         chart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: datos.map(item => item.unidad),
+                labels: datosFiltrados.map(item => item.unidad),
                 datasets: [{
-                    label: 'Productividad chequeo PREVENIMSS',
-                    data: datos.map(item => item["Productividad chequeo PREVENIMSS"]),
+                    label: indicadorSeleccionado,
+                    data: datosFiltrados.map(item => item.valor),
                     backgroundColor: backgroundColors,
                     borderColor: borderColors,
                     borderWidth: 2
@@ -128,11 +158,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     }
                 }
+
             }
         });
     }
-    
 
-    // Inicialización inicial del gráfico
-    actualizarGrafico();
+    actualizarGrafico(); // Inicializar el gráfico por primera vez
 });
