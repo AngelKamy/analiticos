@@ -1,4 +1,4 @@
-import { datosProductividad } from "./JSONprod.js";
+import { configuracionIndicadores, datosProductividad, etiquetasIndicadores } from "./JSONprod.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     const anoSelect = document.getElementById('anoSelect');
@@ -42,61 +42,50 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Nuevo método para cargar indicadores basados en el año y mes seleccionados
     function cargarIndicadores() {
-        const ano = anoSelect.value;
-        const mes = mesSelect.value;
-        const datos = datosProductividad[ano][mes];
-        const indicadores = new Set(); // Usamos un Set para evitar indicadores duplicados
+        indicadorSelect.innerHTML = ''; // Limpiar indicadores existentes
 
-        indicadorSelect.innerHTML = ''; // Limpiamos los indicadores existentes antes de cargar los nuevos
-
-        datos.forEach(item => {
-            Object.keys(item.indicador).forEach(indicador => {
-                indicadores.add(indicador);
-            });
-        });
-
-        indicadores.forEach(indicador => {
-            let option = new Option(indicador, indicador);
+        etiquetasIndicadores.forEach((etiqueta, index) => {
+            let option = new Option(etiqueta, index); // Usar el índice como valor
             indicadorSelect.add(option);
         });
     }
-
     function actualizarGrafico() {
         const ano = anoSelect.value;
         const mes = mesSelect.value;
-        const indicadorSeleccionado = indicadorSelect.value;
+        const indiceIndicadorSeleccionado = parseInt(indicadorSelect.value);
         const datos = datosProductividad[ano][mes];
-
-        // Modificación principal para adaptar a la nueva estructura de datos
-        // Actualización de la línea de sort para ser dinámica
-        datos.sort((a, b) => b.indicador[indicadorSeleccionado] - a.indicador[indicadorSeleccionado]);
-
-
-        if (chart) {
-            chart.destroy(); // Destruye el gráfico anterior para una nueva generación
-        }
-
-        const datosFiltrados = datos.map(item => ({
+    
+        if (chart) chart.destroy(); // Destruye el gráfico anterior para una nueva generación
+    
+        // Busca la configuración del indicador seleccionado
+        const configuracionActual = configuracionIndicadores[indiceIndicadorSeleccionado];
+    
+        let datosFiltrados = datos.map(item => ({
             unidad: item.unidad,
-            valor: item.indicador[indicadorSeleccionado] || 0
+            valor: item.indicador[indiceIndicadorSeleccionado] || 0
         }));
-
+    
+        // Aquí filtramos para eliminar los elementos con valor 0
+        datosFiltrados = datosFiltrados.filter(item => item.valor !== 0);
+    
+        datosFiltrados.sort((a, b) => b.valor - a.valor);
+    
+        // Aplica los colores de las barras según los umbrales
         const backgroundColors = datosFiltrados.map(item => {
-            if (item.valor > 20) return 'rgba(246, 25, 21)';
-            else if (item.valor >= 14) return 'rgba(40, 180, 99)';
-            else return 'rgba(253, 250, 53)';
+            if (item.valor > configuracionActual.umbralSuperior) return configuracionActual.backgroundColors[0];
+            else if (item.valor >= configuracionActual.umbralInferior) return configuracionActual.backgroundColors[1];
+            else return configuracionActual.backgroundColors[2];
         });
-
-        const borderColors = backgroundColors;
-
+    
+        const borderColors = backgroundColors; // Ajusta si necesitas diferentes colores de borde
+    
         chart = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: datosFiltrados.map(item => item.unidad),
                 datasets: [{
-                    label: indicadorSeleccionado,
+                    label: etiquetasIndicadores[indiceIndicadorSeleccionado],
                     data: datosFiltrados.map(item => item.valor),
                     backgroundColor: backgroundColors,
                     borderColor: borderColors,
@@ -117,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     x: {
                         beginAtZero: true,
                         ticks: {
-                            // Define el intervalo entre las marcas de graduación del eje X
                             stepSize: 2
                         }
                     },
@@ -127,41 +115,42 @@ document.addEventListener('DOMContentLoaded', function () {
                             maxRotation: 0,
                             minRotation: 0
                         },
-                        barThickness: 20, // Ajusta según necesidad
+                        barThickness: 20,
                     }
                 },
                 plugins: {
                     legend: {
                         labels: {
                             font: {
-                                family: 'Montserrat' // Aplica la fuente Montserrat a la leyenda
+                                family: 'Montserrat'
                             }
                         }
                     },
                     annotation: {
                         annotations: {
-                            lineX20: {
+                            lineXSuperior: {
                                 type: 'line',
-                                xMin: 20,
-                                xMax: 20,
-                                borderColor: 'rgb(255, 99, 132)',
+                                xMin: configuracionActual.umbralSuperior,
+                                xMax: configuracionActual.umbralSuperior,
+                                borderColor: configuracionActual.colorSuperior,
                                 borderWidth: 1.5,
                             },
-                            lineX14: {
+                            lineXInferior: {
                                 type: 'line',
-                                xMin: 14,
-                                xMax: 14,
-                                borderColor: "black",
+                                xMin: configuracionActual.umbralInferior,
+                                xMax: configuracionActual.umbralInferior,
+                                borderColor: configuracionActual.colorInferior,
                                 borderWidth: 1,
                                 borderDash: [5, 5]
                             }
                         }
                     }
                 }
-
             }
         });
     }
+    
+
 
     actualizarGrafico(); // Inicializar el gráfico por primera vez
 });
