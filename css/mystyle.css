@@ -20,6 +20,7 @@ nav {
 .encabezado {
   display: flex;
   flex-direction: row;
+  /* Ajustado para que el logo esté a un lado en pantallas grandes */
   align-items: center;
   justify-content: flex-start;
   text-align: left;
@@ -85,19 +86,24 @@ nav {
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
+
 }
 
 .menu_bar ul li a:hover {
   color: #3a5a57;
   border-radius: 5px;
   background-color: #FFFC90;
+
+
 }
 
 #home:hover svg {
   transform: scale(1.2);
   transition: transform 0.3s ease;
+  /* Suaviza la transición */
   background-color: #3a5a57;
 }
+
 
 /* Estilos para contenedores y selecciones */
 .container_page {
@@ -135,35 +141,6 @@ select {
   color: #333;
   padding: 8px 10px;
   border-radius: 5px;
-  width: auto; /* Asegura que el select se ajusta al contenido o espacio disponible */
-}
-
-/* Media queries para ajustar la responsividad de .container_select */
-@media (max-width: 768px) {
-  .container_select {
-    flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
-    align-items: stretch; /* Alinea los elementos a lo largo del eje principal */
-  }
-
-  label {
-    width: 100%; /* Los labels ocupan todo el ancho */
-    margin-bottom: 10px; /* Espacio después de cada label para claridad */
-  }
-
-  select {
-    width: 100%; /* Los select ocupan todo el ancho */
-  }
-}
-
-@media (max-width: 480px) {
-  .container_select {
-    padding: 15px; /* Reduce el padding en dispositivos muy pequeños */
-  }
-
-  label,
-  select {
-    font-size: 12px; /* Reduce un poco el tamaño de fuente para ajustarse a pantallas más pequeñas */
-  }
 }
 
 /* Estilos para las tarjetas */
@@ -180,6 +157,7 @@ select {
   padding: 20px;
   margin: 12.5px;
   width: 300px;
+  /* Corregido */
   box-sizing: border-box;
 }
 
@@ -187,17 +165,24 @@ select {
   background-color: #ddd8cf;
   background-size: 100%, 500px;
   min-height: 740px;
+  /* Ajusta este valor según tus necesidades */
   display: flex;
+  /* Habilita Flexbox */
   flex-direction: column;
+  /* Organiza los hijos verticalmente */
   justify-content: center;
+  /* Centra los hijos verticalmente */
   align-items: center;
+  /* Centra los hijos horizontalmente */
   text-align: center;
+  /* Asegura que el texto también esté centrado, aunque flex ya lo maneja */
 }
 
 .main h2 {
   font-size: 56px;
   color: #466d68;
   margin: 20px 0;
+  /* Ajusta el espaciado según necesites */
 }
 
 .main hr {
@@ -205,14 +190,17 @@ select {
   height: 5px;
   background-color: #3a5a57;
   border: none;
+  /* Elimina el borde por defecto para que se vea el color de fondo */
   border-radius: 5px;
   margin: 20px 0;
+  /* Ajusta según necesites */
 }
 
 .main h3 {
   font-size: 40px;
   color: #d8ac5b;
   margin: 20px 0;
+  /* Ajusta según necesites */
 }
 
 #detalleInfo {
@@ -223,33 +211,118 @@ select {
   padding: 10px 25px;
   margin: 15px;
   position: fixed;
+  /* O absolute, según el contexto */
   bottom: 0;
+  /* Ajusta esto según dónde quieras que aparezca */
   left: 0;
   height: 220px;
   width: 550px;
+  /* Ancho máximo de la ventana del navegador */
   z-index: 1000;
-  visibility: hidden;
+  /* Asegúrate de que se sobreponga a otros elementos */
+  display: none;
+  /* Oculto inicialmente */
 }
 
-.detalleInfoBox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.valor_detalle {
+  color: #FFFC90;
+  font-weight: bolder;
 }
 
-#closeIcon {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  fill: #fff;
+#productividadChart {
+  height: auto;
+  /* Altura automática basada en el contenido */
+  min-height:00px;
+  /* Establece una altura mínima si es necesario */
+ 
 }
 
-#closeIcon:hover {
-  fill: #f00;
+.chart-container {
+  position: relative;
+  height: 40vh;
+  width: 80vw;
+  margin: auto; /* Centrar la gráfica si es necesario */
 }
 
-/* Ajustes específicos para visibilidad en diferentes elementos */
-#detalleInfo.visible {
-  visibility: visible;
+.chart-footer {
+  text-align: center;
+  color: #666;
+  font-size: 0.8em; /* Ajusta el tamaño de la fuente según necesites */
+  margin-top: 5px; /* Espacio entre la gráfica y el texto */
+}
+
+.card_prin {
+  background-color: #3a5a57; 
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Margen externo */
+  width: calc(100% - 200px); /* Ancho ajustado al contenedor con margen */
+  box-sizing: border-box; /* Incluye padding y border en el ancho y alto total */
+  color: #333; /* Color de texto oscuro para contraste */
+  text-align: left; /* Alineación de texto a la izquierda */
+}
+
+.card_prin h4 {
+  color:  #ddd8cf;
+  margin-bottom: 10px; /* Espacio después del título */
+  font-size: 22px; /* Tamaño de fuente para el título de la tarjeta */
+}
+
+.card_prin p {
+  font-size: 16px; /* Tamaño de fuente del texto */
+  line-height: 1.5; /* Espacio entre líneas para mejorar la legibilidad */
+  color: #ffffff;
+}
+
+
+
+@media (max-width: 915px) {
+  .encabezado {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .logo,
+  .titulo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulo {
+    margin-left: 0;
+  }
+
+  .container_select {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    /* Ajusta para pantallas pequeñas */
+    margin: 12.5px auto;
+  }
+
+  .main h2 {
+    font-size: 44.8px;
+  }
+
+  .main hr {
+    width: 400px;
+  }
+
+  .main h3 {
+    font-size: 32px;
+  }
+
+
+
+}
+
+@media (max-width: 1316px) {
+  .cards_grid .card {
+    margin: 10px;
+    /* Esto proporciona 50px de espacio total en horizontal y vertical entre las tarjetas */
+  }
 }
