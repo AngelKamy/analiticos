@@ -15,7 +15,7 @@
     <nav>
         <div class="encabezado">
             <div class="logo">
-                <img src="../assets/descarga.png" alt="logo_imss">
+                <a href="../index.html"> <img src="../assets/descarga.png" alt="logo_imss"></a>
             </div>
             <div class="titulo">
                 <h1>Dashboard Analíticos OOAD Hidalgo</h1>
@@ -51,7 +51,7 @@
 
             <label for="indicadorSelect">Indicador</label>
             <select id="indicadorSelect">
-                
+
             </select>
 
         </div>
@@ -63,9 +63,12 @@
         </div>
     </div>
 
-    <div>
-        <p>Fuente: SIAIS/ARIMAC</p>
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="productividadChart"></canvas>
+        <p class="chart-footer">Fuente: SIAIS/ARIMAC/IBS</p>
     </div>
+
+
 
     <script type="module" src="../js/indicadores.js"></script>
 </body>

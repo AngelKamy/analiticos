@@ -55,31 +55,31 @@ document.addEventListener('DOMContentLoaded', function () {
         const mes = mesSelect.value;
         const indiceIndicadorSeleccionado = parseInt(indicadorSelect.value);
         const datos = datosProductividad[ano][mes];
-    
+
         if (chart) chart.destroy(); // Destruye el gráfico anterior para una nueva generación
-    
+
         // Busca la configuración del indicador seleccionado
         const configuracionActual = configuracionIndicadores[indiceIndicadorSeleccionado];
-    
+
         let datosFiltrados = datos.map(item => ({
             unidad: item.unidad,
             valor: item.indicador[indiceIndicadorSeleccionado] || 0
         }));
-    
+
         // Aquí filtramos para eliminar los elementos con valor 0
         datosFiltrados = datosFiltrados.filter(item => item.valor !== 0);
-    
+
         datosFiltrados.sort((a, b) => b.valor - a.valor);
-    
+
         // Aplica los colores de las barras según los umbrales
         const backgroundColors = datosFiltrados.map(item => {
             if (item.valor > configuracionActual.umbralSuperior) return configuracionActual.backgroundColors[0];
             else if (item.valor >= configuracionActual.umbralInferior) return configuracionActual.backgroundColors[1];
             else return configuracionActual.backgroundColors[2];
         });
-    
+
         const borderColors = backgroundColors; // Ajusta si necesitas diferentes colores de borde
-    
+
         chart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-    
+
 
 
     actualizarGrafico(); // Inicializar el gráfico por primera vez

@@ -27,13 +27,13 @@ nav {
   width: 100%;
   background-color: #466d68;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0;
 }
 
 .logo img {
   max-width: 250px;
   height: auto;
-  padding: 5px;
+  padding:0;
 }
 
 .logo,
@@ -164,7 +164,7 @@ select {
 .main {
   background-color: #ddd8cf;
   background-size: 100%, 500px;
-  min-height: 695px;
+  min-height: 740px;
   /* Ajusta este valor según tus necesidades */
   display: flex;
   /* Habilita Flexbox */
@@ -198,7 +198,7 @@ select {
 
 .main h3 {
   font-size: 40px;
-  color: #ddc9a3;
+  color: #d8ac5b;
   margin: 20px 0;
   /* Ajusta según necesites */
 }
@@ -236,6 +236,46 @@ select {
   /* Establece una altura mínima si es necesario */
  
 }
+
+.chart-container {
+  position: relative;
+  height: 40vh;
+  width: 80vw;
+  margin: auto; /* Centrar la gráfica si es necesario */
+}
+
+.chart-footer {
+  text-align: center;
+  color: #666;
+  font-size: 0.8em; /* Ajusta el tamaño de la fuente según necesites */
+  margin-top: 5px; /* Espacio entre la gráfica y el texto */
+}
+
+.card_prin {
+  background-color: #3a5a57; 
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Margen externo */
+  width: calc(100% - 200px); /* Ancho ajustado al contenedor con margen */
+  box-sizing: border-box; /* Incluye padding y border en el ancho y alto total */
+  color: #333; /* Color de texto oscuro para contraste */
+  text-align: left; /* Alineación de texto a la izquierda */
+}
+
+.card_prin h4 {
+  color:  #ddd8cf;
+  margin-bottom: 10px; /* Espacio después del título */
+  font-size: 22px; /* Tamaño de fuente para el título de la tarjeta */
+}
+
+.card_prin p {
+  font-size: 16px; /* Tamaño de fuente del texto */
+  line-height: 1.5; /* Espacio entre líneas para mejorar la legibilidad */
+  color: #ffffff;
+}
+
+
 
 @media (max-width: 915px) {
   .encabezado {
@@ -275,6 +315,8 @@ select {
   .main h3 {
     font-size: 32px;
   }
+
+
 
 }
 
