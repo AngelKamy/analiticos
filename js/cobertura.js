@@ -1,5 +1,5 @@
 import { datos } from './JSONdatos.js';
-import { detalles } from './JSONdetalles.js';
+import { detalles } from './JSONdatos.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   const anoSelect = document.getElementById('anoSelect');
