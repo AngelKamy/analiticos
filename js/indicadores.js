@@ -1,4 +1,6 @@
-import { configuracionIndicadores, datosProductividad, etiquetasIndicadores } from "./JSONprod.js";
+import { configuracionIndicadores } from "./JSONdatos.js";
+import { datosProductividad } from "./JSONdatos.js";
+import umbralesIndicadores from ".umbralesIndicadores.json";
 
 document.addEventListener('DOMContentLoaded', function () {
     const anoSelect = document.getElementById('anoSelect');
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             indicadorSelect.add(option);
         });
     }
+
     function actualizarGrafico() {
         const ano = anoSelect.value;
         const mes = mesSelect.value;
@@ -57,6 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const datos = datosProductividad[ano][mes];
 
         if (chart) chart.destroy(); // Destruye el gráfico anterior para una nueva generación
+
+        // Cargar umbrales dinámicos
+        const umbralSuperior = umbralesIndicadores[ano][mes][indiceIndicadorSeleccionado].umbralSuperior;
+        const umbralInferior = umbralesIndicadores[ano][mes][indiceIndicadorSeleccionado].umbralInferior;
 
         // Busca la configuración del indicador seleccionado
         const configuracionActual = configuracionIndicadores[indiceIndicadorSeleccionado];
@@ -73,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Aplica los colores de las barras según los umbrales
         const backgroundColors = datosFiltrados.map(item => {
-            if (item.valor > configuracionActual.umbralSuperior) return configuracionActual.backgroundColors[0];
-            else if (item.valor >= configuracionActual.umbralInferior) return configuracionActual.backgroundColors[1];
+            if (item.valor > umbralSuperior) return configuracionActual.backgroundColors[0];
+            else if (item.valor >= umbralInferior) return configuracionActual.backgroundColors[1];
             else return configuracionActual.backgroundColors[2];
         });
 
@@ -130,15 +137,15 @@ document.addEventListener('DOMContentLoaded', function () {
                         annotations: {
                             lineXSuperior: {
                                 type: 'line',
-                                xMin: configuracionActual.umbralSuperior,
-                                xMax: configuracionActual.umbralSuperior,
+                                xMin: umbralSuperior,
+                                xMax: umbralSuperior,
                                 borderColor: configuracionActual.colorSuperior,
                                 borderWidth: 1.5,
                             },
                             lineXInferior: {
                                 type: 'line',
-                                xMin: configuracionActual.umbralInferior,
-                                xMax: configuracionActual.umbralInferior,
+                                xMin: umbralInferior,
+                                xMax: umbralInferior,
                                 borderColor: configuracionActual.colorInferior,
                                 borderWidth: 1,
                                 borderDash: [5, 5]
@@ -149,8 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
-
 
     actualizarGrafico(); // Inicializar el gráfico por primera vez
 });
