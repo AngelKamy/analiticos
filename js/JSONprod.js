@@ -429,129 +429,178 @@ export const etiquetasIndicadores = [
     "Cobertura de detección de Tamiz Neonatal (SIAIS)"
 ];
 
-
 export const configuracionIndicadores = {
     0: {//Productividad chequeo PREVENIMSS
+        umbralSuperior: 20,
+        umbralInferior: 14,
         colorSuperior: 'rgb(255, 99, 132)',
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
     },
     1: {//Porcentaje API
+        umbralSuperior: 95,
+        umbralInferior: 90,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
     },
     2: {//Índice de API / Atención Curativa
+        umbralSuperior: 10,
+        umbralInferior: 3.5,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']        // Ejemplo de colores para las barras
     },
     3: {//Cobertura chequeo PREVENIMSS
+        umbralSuperior: 5.9,
+        umbralInferior: 5.4,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
     },
     4: {//CACU 01 - Cobertura de tamizaje de primera vez de Cáncer Cérvico Uterino en mujeres entre 25 y 64 años.
+        umbralSuperior: 2.50,
+        umbralInferior: 1.91,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
     },
     5: {//Tasa de incidencia displasia leve y moderada ♀ 25 años y más
+        umbralSuperior: 50,
+        umbralInferior: 0,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)']
     },
     6: {//Tasa de incidencia displasia severa y cáncer in situ ♀ 25 años y más
+        umbralSuperior: 50,
+        umbralInferior: 5,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
     },
     7: {//Cobertura de detección de CaMa por mastografía ♀ 40 a 49 años
+        umbralSuperior: 7,
+        umbralInferior: 5,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
     },
     8: {//Cobertura de detección de CaMa por mastografía ♀ 50 a 69 años
+        umbralSuperior: 20,
+        umbralInferior: 15.1,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
     },
     9: {//Tasa de incidencia por cáncer cervicouterino ♀ 25 años y más
+        umbralSuperior: 50,
+        umbralInferior: 5.7,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
     },
     10: {//Tasa de incidencia por cáncer de mama ♀ 25 años y más
+        umbralSuperior: 45.4,
+        umbralInferior: 17.2,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
     },
     11: {//Tasa de mortalidad por cáncer cervicouterino ♀ 20 años y más
+        umbralSuperior: 30,
+        umbralInferior: 4.6,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
     },
     12: {//Tasa de mortalidad por cáncer de mama ♀ 20 años y más
+        umbralSuperior: 30,
+        umbralInferior: 9.6,
         colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
         colorInferior: 'black', // Ejemplo de color
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
     },
     13: {//Cobertura de detección de primera vez de diabetes mellitus en DH
+        umbralSuperior: 32,
+        umbralInferior: 25.1,
         colorSuperior: 'rgb(255, 99, 132)',
         colorInferior: 'black',
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
     },
     14: {//Índice de confirmación de DM población de 20 año y más
+        umbralSuperior: 15,
+        umbralInferior: 10,
         colorSuperior: 'rgb(255, 99, 132)',
         colorInferior: 'black',
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
     },
     15: {//Porcentaje de pacientes en control de DM
+        umbralSuperior: 40,
+        umbralInferior: 35,
         colorSuperior: 'rgb(255, 99, 132)',
         colorInferior: 'black',
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
     },
     16: {//Tasa de Incidencia de DM en población derechohabiente de 20 años y más.
+        umbralSuperior: 400,
+        umbralInferior: 399.9,
         colorSuperior: 'rgb(255, 99, 132)',
         colorInferior: 'black',
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)',]
     },
     17: {//Cobertura de detección de primera vez de Hipertensión Arterial en DH de 20 años y más
+        umbralSuperior: 69,
+        umbralInferior: 59,
         colorSuperior: 'rgb(255, 99, 132)',
         colorInferior: 'black',
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
     },
     18: {//Índice de confirmación de casos sospechosos de HA en población de 20 años y más
+        umbralSuperior: 20,
+        umbralInferior: 10.1,
         colorSuperior: 'rgba(255, 99, 132,0)',
         colorInferior: 'black',
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
     },
     19: {//Porcentaje de pacientes en control de EH
+        umbralSuperior: 65,
+        umbralInferior: 50,
         colorSuperior: 'rgba(255, 99, 132,0)',
         colorInferior: 'black',
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
     },
     20: {//Tasa de Incidencia de EH en población derechohabiente de 20 años y más.
+        umbralSuperior: 500,
+        umbralInferior: 499.9,
         colorSuperior: 'rgba(255, 99, 132,0)',
         colorInferior: 'black',
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
     },
     21: {//Tasa de mortalidad por diabetes mellitus DH 20 años y más
+        umbralSuperior: 70,
+        umbralInferior: 69.9,
         colorSuperior: 'rgba(255, 99, 132,0)',
         colorInferior: 'black',
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
     },
     22: {//Tasa de mortalidad por enfermedades hipertensivas DH 20 años y más
+        umbralSuperior: 50.6,
+        umbralInferior: 50.5,
         colorSuperior: 'rgba(255, 99, 132)',
         colorInferior: 'white',
         backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
     },
     23: {//Esquemas completos de vacunación en niños de 1 año (DH)
+        umbralSuperior: 95,
+        umbralInferior: 93,
         colorSuperior: 'rgba(255, 99, 132)',
         colorInferior: 'blacks',
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
     },
     24: {//Cobertura de detección de Tamiz Neonatal (SIAIS)
+        umbralSuperior: 95,
+        umbralInferior: 93,
         colorSuperior: 'rgba(255, 99, 132)',
         colorInferior: 'blacks',
         backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
