@@ -58,15 +58,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (chart) chart.destroy(); // Destruye el gráfico anterior para una nueva generación
 
-        // Busca la configuración del indicador seleccionado
-        const configuracionActual = configuracionIndicadores[indiceIndicadorSeleccionado];
+        // Busca la configuración del indicador seleccionado en el nuevo formato
+        const configuracionActual = configuracionIndicadores[ano][mes][indiceIndicadorSeleccionado];
 
         let datosFiltrados = datos.map(item => ({
             unidad: item.unidad,
             valor: item.indicador[indiceIndicadorSeleccionado] || 0
         }));
 
-        // Aquí filtramos para eliminar los elementos con valor 0
+        // Filtra para eliminar los elementos con valor 0
         datosFiltrados = datosFiltrados.filter(item => item.valor !== 0);
 
         datosFiltrados.sort((a, b) => b.valor - a.valor);
@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
 
 
 
