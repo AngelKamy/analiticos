@@ -430,8 +430,8 @@ export const etiquetasIndicadores = [
 ];
 
 export const configuracionIndicadores = {
-    "2024":{
-        "Enero":{
+    "2024": {
+        "Enero": {
             0: {//Productividad chequeo PREVENIMSS
                 umbralSuperior: 20, umbralInferior: 14,
                 colorSuperior: 'rgb(255, 99, 132)',
@@ -490,7 +490,7 @@ export const configuracionIndicadores = {
                 umbralSuperior: 5.7, umbralInferior: 0,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)','rgba(40, 180, 99)']
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)']
             },
             10: {//Tasa de incidencia por cáncer de mama ♀ 25 años y más
                 umbralSuperior: 45.4, umbralInferior: 17.2,
@@ -541,7 +541,7 @@ export const configuracionIndicadores = {
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
             },
             18: {//Índice de confirmación de casos sospechosos de HA en población de 20 años y más
-                umbralSuperior:19.9, umbralInferior: 10,
+                umbralSuperior: 19.9, umbralInferior: 10,
                 colorSuperior: 'rgba(255, 99, 132)',
                 colorInferior: 'black',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
@@ -581,9 +581,622 @@ export const configuracionIndicadores = {
                 colorSuperior: 'rgba(255, 99, 132)',
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
-        
+
             }
         },
+        "Febrero": {
+            0: {//CTE 01 - Productividad de Chequeo PrevenIMSS por personal de Enfermería."
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            1: {//Porcentaje API
+                umbralSuperior: 95, umbralInferior: 90,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            2: {//Índice de API / Atención Curativa
+                umbralSuperior: 10, umbralInferior: 3.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']        // Ejemplo de colores para las barras
+            },
+            3: {//CUPN 01 - Cobertura de Chequeo PrevenIMSS.
+                umbralSuperior: 11.8, umbralInferior: 10.9,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            4: {//CACU 01 - Cobertura de tamizaje de primera vez de Cáncer Cérvico Uterino en mujeres entre 25 y 64 años.
+                umbralSuperior: 5.0, umbralInferior: 3.8,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            5: {//CACU 05 - Tasa de incidencia de displasia cervical leve o moderada, en mujeres de 25 años y más.
+                umbralSuperior: 36.1, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)']
+            },
+            6: {//CACU 06 -Tasa de incidencia de displasia cervical severa y cacu in situ, en derechohabientes de +25 años
+                umbralSuperior: 50, umbralInferior: 5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            7: {//CAMAma 01 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 40 y 49 años
+                umbralSuperior: 1.2, umbralInferior: 0.4,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            8: {//CAMAma 02 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 50 y 69 años
+                umbralSuperior: 3.3, umbralInferior: 2.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            9: {//CACU 04 - Tasa de incidencia de Cáncer Cérvico Uterino en mujeres de 25 años y más.
+                umbralSuperior: 5.7, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            10: {//CAMAma 06 - Tasa de incidencia de cáncer de Mama en mujeres derechohabientes de 25 años y más
+                umbralSuperior: 45.4, umbralInferior: 17.2,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            11: {//Tasa de mortalidad por cáncer cervicouterino ♀ 20 años y más
+                umbralSuperior: 30, umbralInferior: 4.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            12: {//CAMAma 09 - Tasa de mortalidad por Cáncer de Mama en mujeres derechohabientes de 25 años y más.
+                umbralSuperior: 30, umbralInferior: 9.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            13: {//DM 01 - Cobertura de detección de primera de Diabetes Mellitus en población derechohabiente 20+
+                umbralSuperior: 5.5, umbralInferior: 4.2,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            14: {//DM 02 - índice de confirmación de Diabetes Mellitus en casos sospechosos, derechohabientes de +20 años
+                umbralSuperior: 15, umbralInferior: 9.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            15: {//DM 04 - Porcentaje de pacientes con Diabetes Mellitus de +20 años, en control adecuado
+                umbralSuperior: 40, umbralInferior: 34.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            16: {//DM 03 - Tasa de incidencia de Diabetes Mellitus en derechoabientes de +20 años
+                umbralSuperior: 400, umbralInferior: 399.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)',]
+            },
+            17: {//EH 01 - Cobertura de detección de Hipertensión Arterial en derechiabientes de +20 años
+                umbralSuperior: 11.7, umbralInferior: 9.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            18: {//EH 02 - índice de confirmación de Hipertensión Arterial en casos sospechosos derechohabientes de +20 años.
+                umbralSuperior: 19.9, umbralInferior: 10,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            19: {//EH 04 - Porcentaje de pacientes de +20 años en control de Hipertensión Arterial en medicina familiar.
+                umbralSuperior: 65, umbralInferior: 59.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            20: {//EH 03 - Tasa de incidencia de Enfermedades Hipertensivas en derechohabientes de +20 años
+                umbralSuperior: 500, umbralInferior: 499.9,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            21: {//Tasa de mortalidad por diabetes mellitus DH 20 años y más
+                umbralSuperior: 70, umbralInferior: 69.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            22: {//Tasa de mortalidad por enfermedades hipertensivas DH 20 años y más
+                umbralSuperior: 50.6, umbralInferior: 50.5,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'white',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            23: {//CUPN 03 - Cobertura con esquemas completos de vacunación en niños de un año de edad.
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            24: {//Cobertura de detección de Tamiz Neonatal (SIAIS)
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+
+            }
+        },
+        "Marzo": {
+            0: {//CTE 01 - Productividad de Chequeo PrevenIMSS por personal de Enfermería."
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            1: {//Porcentaje API
+                umbralSuperior: 95, umbralInferior: 90,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            2: {//Índice de API / Atención Curativa
+                umbralSuperior: 10, umbralInferior: 3.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']        // Ejemplo de colores para las barras
+            },
+            3: {//CUPN 01 - Cobertura de Chequeo PrevenIMSS.
+                umbralSuperior: 17.6, umbralInferior: 16.3,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            4: {//CACU 01 - Cobertura de tamizaje de primera vez de Cáncer Cérvico Uterino en mujeres entre 25 y 64 años.
+                umbralSuperior: 7.5, umbralInferior: 5.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            5: {//CACU 05 - Tasa de incidencia de displasia cervical leve o moderada, en mujeres de 25 años y más.
+                umbralSuperior: 36.1, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)']
+            },
+            6: {//CACU 06 -Tasa de incidencia de displasia cervical severa y cacu in situ, en derechohabientes de +25 años
+                umbralSuperior: 50, umbralInferior: 5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            7: {//CAMAma 01 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 40 y 49 años
+                umbralSuperior: 1.8, umbralInferior: 0.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            8: {//CAMAma 02 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 50 y 69 años
+                umbralSuperior: 5.0, umbralInferior: 3.8,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            9: {//CACU 04 - Tasa de incidencia de Cáncer Cérvico Uterino en mujeres de 25 años y más.
+                umbralSuperior: 5.7, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            10: {//CAMAma 06 - Tasa de incidencia de cáncer de Mama en mujeres derechohabientes de 25 años y más
+                umbralSuperior: 45.4, umbralInferior: 17.2,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            11: {//Tasa de mortalidad por cáncer cervicouterino ♀ 20 años y más
+                umbralSuperior: 30, umbralInferior: 4.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            12: {//CAMAma 09 - Tasa de mortalidad por Cáncer de Mama en mujeres derechohabientes de 25 años y más.
+                umbralSuperior: 30, umbralInferior: 9.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            13: {//DM 01 - Cobertura de detección de primera de Diabetes Mellitus en población derechohabiente 20+
+                umbralSuperior: 8.3, umbralInferior: 6.4,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            14: {//DM 02 - índice de confirmación de Diabetes Mellitus en casos sospechosos, derechohabientes de +20 años
+                umbralSuperior: 15, umbralInferior: 9.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            15: {//DM 04 - Porcentaje de pacientes con Diabetes Mellitus de +20 años, en control adecuado
+                umbralSuperior: 40, umbralInferior: 34.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            16: {//DM 03 - Tasa de incidencia de Diabetes Mellitus en derechoabientes de +20 años
+                umbralSuperior: 400, umbralInferior: 399.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)',]
+            },
+            17: {//EH 01 - Cobertura de detección de Hipertensión Arterial en derechiabientes de +20 años
+                umbralSuperior: 17.5, umbralInferior: 14.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            18: {//EH 02 - índice de confirmación de Hipertensión Arterial en casos sospechosos derechohabientes de +20 años.
+                umbralSuperior: 19.9, umbralInferior: 10,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            19: {//EH 04 - Porcentaje de pacientes de +20 años en control de Hipertensión Arterial en medicina familiar.
+                umbralSuperior: 65, umbralInferior: 59.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            20: {//EH 03 - Tasa de incidencia de Enfermedades Hipertensivas en derechohabientes de +20 años
+                umbralSuperior: 500, umbralInferior: 499.9,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            21: {//Tasa de mortalidad por diabetes mellitus DH 20 años y más
+                umbralSuperior: 70, umbralInferior: 69.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            22: {//Tasa de mortalidad por enfermedades hipertensivas DH 20 años y más
+                umbralSuperior: 50.6, umbralInferior: 50.5,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'white',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            23: {//CUPN 03 - Cobertura con esquemas completos de vacunación en niños de un año de edad.
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            24: {//Cobertura de detección de Tamiz Neonatal (SIAIS)
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+
+            }
+        },
+        "Abril": {
+            0: {//CTE 01 - Productividad de Chequeo PrevenIMSS por personal de Enfermería."
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            1: {//Porcentaje API
+                umbralSuperior: 95, umbralInferior: 90,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            2: {//Índice de API / Atención Curativa
+                umbralSuperior: 10, umbralInferior: 3.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']        // Ejemplo de colores para las barras
+            },
+            3: {//CUPN 01 - Cobertura de Chequeo PrevenIMSS.
+                umbralSuperior: 23.5, umbralInferior: 21.8,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            4: {//CACU 01 - Cobertura de tamizaje de primera vez de Cáncer Cérvico Uterino en mujeres entre 25 y 64 años.
+                umbralSuperior: 10, umbralInferior: 7.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            5: {//CACU 05 - Tasa de incidencia de displasia cervical leve o moderada, en mujeres de 25 años y más.
+                umbralSuperior: 36.1, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)']
+            },
+            6: {//CACU 06 -Tasa de incidencia de displasia cervical severa y cacu in situ, en derechohabientes de +25 años
+                umbralSuperior: 50, umbralInferior: 5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            7: {//CAMAma 01 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 40 y 49 años
+                umbralSuperior: 2.4, umbralInferior: 0.9,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            8: {//CAMAma 02 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 50 y 69 años
+                umbralSuperior: 6.7, umbralInferior: 5.0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            9: {//CACU 04 - Tasa de incidencia de Cáncer Cérvico Uterino en mujeres de 25 años y más.
+                umbralSuperior: 5.7, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            10: {//CAMAma 06 - Tasa de incidencia de cáncer de Mama en mujeres derechohabientes de 25 años y más
+                umbralSuperior: 45.4, umbralInferior: 17.2,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            11: {//Tasa de mortalidad por cáncer cervicouterino ♀ 20 años y más
+                umbralSuperior: 30, umbralInferior: 4.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            12: {//CAMAma 09 - Tasa de mortalidad por Cáncer de Mama en mujeres derechohabientes de 25 años y más.
+                umbralSuperior: 30, umbralInferior: 9.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            13: {//DM 01 - Cobertura de detección de primera de Diabetes Mellitus en población derechohabiente 20+
+                umbralSuperior: 11.0, umbralInferior: 8.5,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            14: {//DM 02 - índice de confirmación de Diabetes Mellitus en casos sospechosos, derechohabientes de +20 años
+                umbralSuperior: 15, umbralInferior: 9.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            15: {//DM 04 - Porcentaje de pacientes con Diabetes Mellitus de +20 años, en control adecuado
+                umbralSuperior: 40, umbralInferior: 34.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            16: {//DM 03 - Tasa de incidencia de Diabetes Mellitus en derechoabientes de +20 años
+                umbralSuperior: 400, umbralInferior: 399.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)',]
+            },
+            17: {//EH 01 - Cobertura de detección de Hipertensión Arterial en derechiabientes de +20 años
+                umbralSuperior: 23.3, umbralInferior: 19.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            18: {//EH 02 - índice de confirmación de Hipertensión Arterial en casos sospechosos derechohabientes de +20 años.
+                umbralSuperior: 19.9, umbralInferior: 10,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            19: {//EH 04 - Porcentaje de pacientes de +20 años en control de Hipertensión Arterial en medicina familiar.
+                umbralSuperior: 65, umbralInferior: 59.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            20: {//EH 03 - Tasa de incidencia de Enfermedades Hipertensivas en derechohabientes de +20 años
+                umbralSuperior: 500, umbralInferior: 499.9,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            21: {//Tasa de mortalidad por diabetes mellitus DH 20 años y más
+                umbralSuperior: 70, umbralInferior: 69.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            22: {//Tasa de mortalidad por enfermedades hipertensivas DH 20 años y más
+                umbralSuperior: 50.6, umbralInferior: 50.5,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'white',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            23: {//CUPN 03 - Cobertura con esquemas completos de vacunación en niños de un año de edad.
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            24: {//Cobertura de detección de Tamiz Neonatal (SIAIS)
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+
+            }
+        },
+        "Mayo": {
+            0: {//CTE 01 - Productividad de Chequeo PrevenIMSS por personal de Enfermería."
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            1: {//Porcentaje API
+                umbralSuperior: 95, umbralInferior: 90,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            2: {//Índice de API / Atención Curativa
+                umbralSuperior: 10, umbralInferior: 3.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']        // Ejemplo de colores para las barras
+            },
+            3: {//CUPN 01 - Cobertura de Chequeo PrevenIMSS.
+                umbralSuperior: 29.4, umbralInferior: 27.2,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            4: {//CACU 01 - Cobertura de tamizaje de primera vez de Cáncer Cérvico Uterino en mujeres entre 25 y 64 años.
+                umbralSuperior: 12.5, umbralInferior: 9.4,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            5: {//CACU 05 - Tasa de incidencia de displasia cervical leve o moderada, en mujeres de 25 años y más.
+                umbralSuperior: 36.1, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)']
+            },
+            6: {//CACU 06 -Tasa de incidencia de displasia cervical severa y cacu in situ, en derechohabientes de +25 años
+                umbralSuperior: 50, umbralInferior: 5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            7: {//CAMAma 01 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 40 y 49 años
+                umbralSuperior: 3.0, umbralInferior: 1.1,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            8: {//CAMAma 02 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 50 y 69 años
+                umbralSuperior: 8.3, umbralInferior: 6.3,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            9: {//CACU 04 - Tasa de incidencia de Cáncer Cérvico Uterino en mujeres de 25 años y más.
+                umbralSuperior: 5.7, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            10: {//CAMAma 06 - Tasa de incidencia de cáncer de Mama en mujeres derechohabientes de 25 años y más
+                umbralSuperior: 45.4, umbralInferior: 17.2,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            11: {//Tasa de mortalidad por cáncer cervicouterino ♀ 20 años y más
+                umbralSuperior: 30, umbralInferior: 4.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            12: {//CAMAma 09 - Tasa de mortalidad por Cáncer de Mama en mujeres derechohabientes de 25 años y más.
+                umbralSuperior: 30, umbralInferior: 9.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            13: {//DM 01 - Cobertura de detección de primera de Diabetes Mellitus en población derechohabiente 20+
+                umbralSuperior: 13.8, umbralInferior: 10.7,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            14: {//DM 02 - índice de confirmación de Diabetes Mellitus en casos sospechosos, derechohabientes de +20 años
+                umbralSuperior: 15, umbralInferior: 9.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            15: {//DM 04 - Porcentaje de pacientes con Diabetes Mellitus de +20 años, en control adecuado
+                umbralSuperior: 40, umbralInferior: 34.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            16: {//DM 03 - Tasa de incidencia de Diabetes Mellitus en derechoabientes de +20 años
+                umbralSuperior: 400, umbralInferior: 399.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)',]
+            },
+            17: {//EH 01 - Cobertura de detección de Hipertensión Arterial en derechiabientes de +20 años
+                umbralSuperior: 29.2, umbralInferior: 24.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            18: {//EH 02 - índice de confirmación de Hipertensión Arterial en casos sospechosos derechohabientes de +20 años.
+                umbralSuperior: 19.9, umbralInferior: 10,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            19: {//EH 04 - Porcentaje de pacientes de +20 años en control de Hipertensión Arterial en medicina familiar.
+                umbralSuperior: 65, umbralInferior: 59.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            20: {//EH 03 - Tasa de incidencia de Enfermedades Hipertensivas en derechohabientes de +20 años
+                umbralSuperior: 500, umbralInferior: 499.9,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            21: {//Tasa de mortalidad por diabetes mellitus DH 20 años y más
+                umbralSuperior: 70, umbralInferior: 69.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            22: {//Tasa de mortalidad por enfermedades hipertensivas DH 20 años y más
+                umbralSuperior: 50.6, umbralInferior: 50.5,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'white',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            23: {//CUPN 03 - Cobertura con esquemas completos de vacunación en niños de un año de edad.
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            24: {//Cobertura de detección de Tamiz Neonatal (SIAIS)
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+
+            }
+        },
+
     }
 
 };
