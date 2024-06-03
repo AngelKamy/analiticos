@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const ctx = document.getElementById('productividadChart').getContext('2d');
     let chart;
 
-    // Cargar años y luego meses
-    cargarAnos();
-    cargarIndicadores(); // Llamamos a cargar indicadores aquí para llenar el select después de cargar años
+    // Cargar años, meses e indicadores
+    inicializarSelects();
 
     // Event listeners para los selects
     anoSelect.addEventListener('change', () => {
@@ -25,12 +24,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     indicadorSelect.addEventListener('change', actualizarGrafico);
 
+    function inicializarSelects() {
+        cargarAnos();
+        cargarMeses();
+        cargarIndicadores();
+        actualizarGrafico(); // Inicializar el gráfico por primera vez
+    }
+
     function cargarAnos() {
         Object.keys(datosProductividad).forEach(ano => {
             let option = new Option(ano, ano);
             anoSelect.add(option);
         });
-        cargarMeses(); // Carga inicial de meses
     }
 
     function cargarMeses() {
@@ -44,12 +49,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function cargarIndicadores() {
         indicadorSelect.innerHTML = ''; // Limpiar indicadores existentes
-
         etiquetasIndicadores.forEach((etiqueta, index) => {
             let option = new Option(etiqueta, index); // Usar el índice como valor
             indicadorSelect.add(option);
         });
     }
+
     function actualizarGrafico() {
         const ano = anoSelect.value;
         const mes = mesSelect.value;
@@ -73,9 +78,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Aplica los colores de las barras según los umbrales
         const backgroundColors = datosFiltrados.map(item => {
-            if (item.valor > configuracionActual.umbralSuperior) return configuracionActual.backgroundColors[0];
-            else if (item.valor >= configuracionActual.umbralInferior) return configuracionActual.backgroundColors[1];
-            else return configuracionActual.backgroundColors[2];
+            if (indiceIndicadorSeleccionado === 0) { // Lógica especial para el primer indicador
+                if (item.valor > configuracionActual.umbralSuperior || item.valor <= 10) {
+                    return configuracionActual.backgroundColors[0]; // Desempeño bajo
+                } else if (item.valor > 10 && item.valor < configuracionActual.umbralInferior) {
+                    return configuracionActual.backgroundColors[2]; // Desempeño medio
+                } else {
+                    return configuracionActual.backgroundColors[1]; // Desempeño esperado
+                }
+            } else {
+                if (item.valor > configuracionActual.umbralSuperior) return configuracionActual.backgroundColors[0];
+                else if (item.valor >= configuracionActual.umbralInferior) return configuracionActual.backgroundColors[1];
+                else return configuracionActual.backgroundColors[2];
+            }
         });
 
         const borderColors = backgroundColors; // Ajusta si necesitas diferentes colores de borde
@@ -149,9 +164,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
-
-
-
-    actualizarGrafico(); // Inicializar el gráfico por primera vez
 });
