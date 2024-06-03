@@ -1196,7 +1196,6 @@ export const configuracionIndicadores = {
 
             }
         },
-
     }
 
 };
