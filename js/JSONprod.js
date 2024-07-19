@@ -477,7 +477,90 @@ export let datosProductividad = {
                 "unidad": "Delegacional",
                 "indicador": [13, 93.5, 4.6, 42.7, 12, 15.2, 4.4, 4.3, 7.6, 2.5, 11.1, 3.5, 5.7, 10.0, 13.3, 65.0, 244.6, 32.0, 26.0, 91.1, 263.2, 33.2, 11.6, 96.2]
             }
+        ],
+        "Junio":[
+            {
+                "unidad": "HGZMF 1",
+                "indicador": [12, 93.7, 6.3, 39.8, 12, 1.4, 1.4, 2.5, 6.8, 4.3, 10.1, 2.9, 2.9, 9.9, 15.0, 67.9, 312.4, 34.9, 34.1, 93.4, 402.6, 34.4, 11.5, 69.3]
+            },
+            {
+                "unidad": "UMF 32",
+                "indicador": [10, 94.1, 4.4, 56.1, 17, 41.8, 12.5, 2.7, 5.6, 0, 33.4, 4.2, 8.4, 17.1, 26.2, 74.9, 247.9, 46.6, 20.0, 89.9, 269.5, 17.7, 3.9, 134.2]
+            },
+            {
+                "unidad": "UMF 25",
+                "indicador": [14, 97.2, 7.1, 16.5, 6.7, 0, 0, 4.9, 9.2, 0, 0, 22.2, 11.1, 6.1, 0.0, 46.2, 103.3, 15.9, 33.3, 91.6, 127.9, 63.9, 14.8, 245.1]
+            },
+            {
+                "unidad": "UMFH 7",
+                "indicador": [14, 98.1, 4.1, 59.8, 19.6, 0, 9.8, 7.0, 11.1, 0, 0, 9.8, 0, 13.8, 22.0, 53.8, 412.3, 47.1, 70.0, 80.9, 323.7, 13.3, 4.4, 108]
+            },
+            {
+                "unidad": "HGZMF 6",
+                "indicador": [12, 98, 6.3, 48.6, 12.2, 8.8, 0, 7.4, 14.2, 0, 0, 4.4, 8.8, 10.2, 8.4, 52.1, 256, 37.1, 15.0, 90.6, 174.2, 64.5, 45.2, 105.5]
+            },
+            {
+                "unidad": "UMF 34",
+                "indicador": [15, 98.9, 4.7, 51.7, 15.7, 0, 0, 4.5, 9.6, 0, 0, 0, 7.5, 11.3, 13.0, 71.5, 198.8, 31.6, 36.4, 91.0, 244.5, 33.4, 10.6, 159.3]
+            },
+            {
+                "unidad": "UMF 4",
+                "indicador": [11, 98.3, 6.9, 43.6, 9.3, 0, 0, 7.2, 10.5, 0, 0, 0, 21.2, 12.7, 7.1, 52.8, 192.4, 38.1, 100.0, 96.2, 445.6, 50.6, 10.1, 97.6]
+            },
+            {
+                "unidad": "HGZMF 8",
+                "indicador": [14, 95.1, 4.3, 47, 13.8, 0, 0, 0.8, 2.4, 0, 23.2, 11.6, 3.9, 10.5, 25.9, 61.9, 271.4, 34.1, 29.4, 91.2, 206.6, 52.5, 12.3, 91.5]
+            },
+            {
+                "unidad": "UMFH 3",
+                "indicador": [17, 96.3, 6.5, 47.8, 17.5, 0, 0, 3.1, 14.6, 0, 0, 0, 0, 11.6, 5.9, 54.5, 340.6, 42.1, 0.0, 87.8, 436.4, 53.2, 0, 171.1]
+            },
+            {
+                "unidad": "UMF 26",
+                "indicador": [13, 97.7, 3.3, 44.1, 12.5, 0, 0, 6.6, 8.1, 0, 10, 0, 10, 11.2, 16.2, 64.9, 187.8, 30.7, 16.0, 82.5, 247.6, 25.6, 8.5, 134.2]
+            },
+            {
+                "unidad": "UMF 9",
+                "indicador": [14, 91.1, 3.3, 44.7, 13.6, 0, 0, 6.7, 12.0, 0, 0, 0, 0, 15.1, 9.7, 58.5, 274.8, 39.3, 0.0, 82.9, 452.1, 0, 0, 81.1]
+            },
+            {
+                "unidad": "UMF 27",
+                "indicador": [12, 95.9, 6.3, 51.9, 10.6, 0, 0, 6.7, 18.1, 0, 0, 0, 0, 11.5, 32.5, 81.2, 324.6, 34.8, 42.9, 92.6, 235.2, 32.9, 4.7, 106.3]
+            },
+            {
+                "unidad": "UMF 37",
+                "indicador": [12, 92.7, 5.8, 27.8, 19.3, 0, 0, 6.6, 13.0, 0, 5.9, 0, 5.9, 16.3, 11.9, 70.8, 264.7, 42.3, 8.3, 92.5, 259.1, 11.3, 8.4, 46.2]
+            },
+            {
+                "unidad": "UMF 31",
+                "indicador": [17, 98.7, 2.3, 52.4, 13.5, 0, 0, 10.3, 18.4, 0, 38.1, 0, 0, 10.0, 0.0, 79.1, 395.3, 34.5, 100.0, 81.5, 593, 28.2, 14.1, 149]
+            },
+            {
+                "unidad": "UMF 35",
+                "indicador": [10, 83.8, 4.6, 43.5, 14.9, 16.8, 5.6, 6.5, 8.7, 0, 22.4, 5.6, 11.2, 14.8, 8.3, 70.4, 236, 37.4, 32.3, 94.1, 158.2, 28.5, 10.4, 97.4]
+            },
+            {
+                "unidad": "UMF 29",
+                "indicador": [19, 99.9, 2.9, 38.9, 14.7, 17.5, 0, 4.8, 14.2, 0, 0, 0, 0, 15.5, 0.0, 57.3, 354.5, 29.9, 100.0, 84.6, 301.7, 7.5, 0, 61.5]
+            },
+            {
+                "unidad": "UMF 15",
+                "indicador": [11, 90.3, 9.2, 43.3, 12.3, 0, 0, 6.3, 10.6, 0, 0, 0, 0, 8.8, 8.1, 82.6, 351.2, 37.8, 0.0, 93.3, 578.1, 16.2, 0, 78.3]
+            },
+            {
+                "unidad": "UMF 16",
+                "indicador": [11, 97.9, 3.1, 45.5, 12.7, 0, 0, 5.7, 11.2, 0, 0, 0, 8.6, 10.2, 10.8, 61.6, 249.1, 28.7, 3.1, 86.7, 241.9, 32.5, 7.2, 87.4]
+            },
+            {
+                "unidad": "UMF 18",
+                "indicador": [14, 95.6, 4.4, 47, 18.1, 66.2, 22.1, 6.4, 7.9, 15.8, 22.1, 3.2, 6.3, 14.1, 15.4, 68.0, 168.9, 35.2, 18.2, 91.3, 109.2, 32, 17.5, 130.1]
+            },
+            {
+                "unidad": "Delegacional",
+                "indicador": [12, 94.9, 5, 44.7, 14.3, 12, 4.1, 4.8, 8.9, 2.5, 11.1, 3.8, 5.7, 12.0, 15.1, 66.5, 260.7, 35.8, 25.3, 90.9, 274.8, 33.5, 12.1, 106.4]
+            }
         ]
+
         
     }
 }
@@ -1279,6 +1362,159 @@ export const configuracionIndicadores = {
 
             }
         },
+        "Junio":{
+            0: {//CTE 01 - Productividad de Chequeo PrevenIMSS por personal de Enfermería."
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            1: {//Porcentaje API
+                umbralSuperior: 95, umbralInferior: 90,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            2: {//Índice de API / Atención Curativa
+                umbralSuperior: 10, umbralInferior: 3.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']        // Ejemplo de colores para las barras
+            },
+            3: {//CUPN 01 - Cobertura de Chequeo PrevenIMSS
+                umbralSuperior: 35.3, umbralInferior: 32.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            4: {//CACU 01 - Cobertura de tamizaje de primera vez de Cáncer Cérvico Uterino en mujeres entre 25 y 64 años.
+                umbralSuperior: 15.0, umbralInferior: 11.3,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            5: {//CACU 05 - Tasa de incidencia de displasia cervical leve o moderada, en mujeres de 25 años y más.
+                umbralSuperior: 36.1, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)']
+            },
+            6: {//CACU 06 -Tasa de incidencia de displasia cervical severa y cacu in situ, en derechohabientes de +25 años
+                umbralSuperior: 50, umbralInferior: 5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            7: {//CAMAma 01 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 40 y 49 años
+                umbralSuperior: 3.6, umbralInferior: 1.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            8: {//CAMAma 02 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 50 y 69 años
+                umbralSuperior: 10.0, umbralInferior: 7.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            9: {//CACU 04 - Tasa de incidencia de Cáncer Cérvico Uterino en mujeres de 25 años y más.
+                umbralSuperior: 5.7, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            10: {//CAMAma 06 - Tasa de incidencia de cáncer de Mama en mujeres derechohabientes de 25 años y más
+                umbralSuperior: 45.4, umbralInferior: 17.2,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            11: {//Tasa de mortalidad por cáncer cervicouterino ♀ 20 años y más
+                umbralSuperior: 30, umbralInferior: 4.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            12: {//CAMAma 09 - Tasa de mortalidad por Cáncer de Mama en mujeres derechohabientes de 25 años y más.
+                umbralSuperior: 30, umbralInferior: 10,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            13: {//DM 01 - Cobertura de detección de primera de Diabetes Mellitus en población derechohabiente 20+
+                umbralSuperior: 16.5, umbralInferior: 12.8,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            14: {//DM 02 - índice de confirmación de Diabetes Mellitus en casos sospechosos, derechohabientes de +20 años
+                umbralSuperior: 15, umbralInferior: 9.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            15: {//DM 04 - Porcentaje de pacientes con Diabetes Mellitus de +20 años, en control adecuado
+                umbralSuperior: 40, umbralInferior: 34.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            16: {//DM 03 - Tasa de incidencia de Diabetes Mellitus en derechoabientes de +20 años
+                umbralSuperior: 400, umbralInferior: 399.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)',]
+            },
+            17: {//EH 01 - Cobertura de detección de Hipertensión Arterial en derechiabientes de +20 años
+                umbralSuperior: 35.0, umbralInferior: 29.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            18: {//EH 02 - índice de confirmación de Hipertensión Arterial en casos sospechosos derechohabientes de +20 años.
+                umbralSuperior: 19.9, umbralInferior: 10,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            19: {//EH 04 - Porcentaje de pacientes de +20 años en control de Hipertensión Arterial en medicina familiar.
+                umbralSuperior: 65, umbralInferior: 59.9,
+                colorSuperior: 'rgba(255, 99, 132   )',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            20: {//EH 03 - Tasa de incidencia de Enfermedades Hipertensivas en derechohabientes de +20 años
+                umbralSuperior: 500, umbralInferior: 499.9,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            21: {//Tasa de mortalidad por diabetes mellitus DH 20 años y más
+                umbralSuperior: 70, umbralInferior: 69.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            22: {//Tasa de mortalidad por enfermedades hipertensivas DH 20 años y más
+                umbralSuperior: 50.6, umbralInferior: 50.5,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'white',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            23: {//CUPN 03 - Cobertura con esquemas completos de vacunación en niños de un año de edad.
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            24: {//Cobertura de detección de Tamiz Neonatal (SIAIS)
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+
+            }
+        }
     }
 
 };
