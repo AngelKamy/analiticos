@@ -723,6 +723,88 @@ export let datosProductividad = {
                 "unidad": "Delegacional",
                 "indicador": [13, 93.2, 4.8, 48.5, 18.9, 9.2, 2.8, 6.3, 12.1, 3.5, 14.6, 3.8, 5.7, 16.0, 12.7, 66.7, 302.4, 43.1, 28.0, 90.2, 319.5, 30.4, 12.1, 106.4]
             }
+        ],
+        "Septiembre": [
+            {
+                "unidad": "HGZMF 1",
+                "indicador": [12, 87.8, 7.4, 44.3, 17.6, 10.1, 5.8, 6.8, 13.6, 2.9, 13, 4.3, 4.3, 14.4, 15.8, 68.0, 381.1, 43.7, 29.9, 92.5, 476.4, 29.4, 10.7, 64.6]
+            },
+            {
+                "unidad": "UMF 32",
+                "indicador": [10, 95.8, 4.4, 63.5, 25, 37.6, 0, 6.7, 12.6, 8.4, 41.8, 4.2, 12.5, 25.2, 7.3, 76.7, 263.6, 60.6, 21.1, 89.9, 310.8, 21.6, 3.9, 122.9]
+            },
+            {
+                "unidad": "UMF 25",
+                "indicador": [8, 94.6, 13.3, 18.9, 9, 0, 0, 6.1, 12.7, 0, 0, 22.2, 11.1, 8.1, 15.4, 52.7, 167.2, 19.4, 0.0, 92.4, 172.1, 39.3, 14.8, 199]
+            },
+            {
+                "unidad": "UMFH 7",
+                "indicador": [17, 97.9, 4.7, 66, 27.4, 0, 9.8, 7.3, 15.7, 0, 0, 0, 0, 20.5, 20.8, 57.3, 492.1, 61.0, 30.8, 86.5, 461.1, 8.9, 0, 91.4]
+            },
+            {
+                "unidad": "HGZMF 6",
+                "indicador": [12, 94.5, 6.5, 53.3, 17.2, 8.8, 0, 7.4, 14.4, 0, 0, 4.4, 8.8, 14.8, 7.0, 53.5, 266.7, 46.4, 28.6, 90.0, 221.6, 62.4, 47.3, 96.6]
+            },
+            {
+                "unidad": "UMF 34",
+                "indicador": [19, 98.4, 3.9, 57.6, 22.7, 0, 0, 5.0, 13.8, 3.7, 3.7, 0, 11.2, 16.7, 8.8, 74.3, 244.5, 41.2, 23.8, 88.6, 297.3, 36.9, 10.6, 146.9]
+            },
+            {
+                "unidad": "UMF 4",
+                "indicador": [15, 100, 5.9, 49.1, 13.5, 0, 0, 7.2, 10.5, 0, 0, 0, 21.2, 19.0, 13.0, 64.4, 313.9, 48.5, 38.5, 94.8, 546.8, 40.5, 10.1, 81.9]
+            },
+            {
+                "unidad": "HGZMF 8",
+                "indicador": [14, 97.5, 4.5, 53, 22.5, 0, 0, 5.4, 9.4, 3.9, 27.1, 11.6, 3.9, 16.5, 20.6, 65.1, 303, 44.5, 31.6, 90.8, 252.2, 47.3, 12.3, 78.2]
+            },
+            {
+                "unidad": "UMFH 3",
+                "indicador": [15, 97.5, 9.3, 52.6, 22.8, 0, 0, 3.1, 14.7, 0, 0, 22.6, 0, 16.4, 0.0, 63.2, 436.4, 51.6, 50.0, 88.0, 542.8, 53.2, 10.6, 158.5]
+            },
+            {
+                "unidad": "UMF 26",
+                "indicador": [8, 94.6, 5.2, 51, 18.7, 0, 0, 6.6, 8.3, 0, 20, 0, 10, 18.0, 16.1, 72.1, 311.6, 41.4, 30.8, 85.0, 367.1, 8.5, 4.3, 116.2]
+            },
+            {
+                "unidad": "UMF 9",
+                "indicador": [12, 89.7, 5.3, 50.3, 18.7, 0, 0, 6.7, 12.0, 0, 0, 0, 0, 21.1, 0.0, 72.4, 372.3, 49.3, 0.0, 87.0, 558.5, 0, 0, 76.1]
+            },
+            {
+                "unidad": "UMF 27",
+                "indicador": [14, 95.7, 5.4, 58.5, 15, 0, 0, 6.7, 18.9, 0, 0, 0, 0, 16.7, 17.7, 79.0, 367, 43.8, 33.3, 92.3, 310.5, 18.8, 4.7, 108.5]
+            },
+            {
+                "unidad": "UMF 37",
+                "indicador": [10, 93.7, 5.8, 37.6, 29.6, 0, 0, 6.8, 16.6, 0, 11.8, 0, 5.9, 25.3, 1.8, 64.6, 352, 55.8, 31.3, 91.3, 273.2, 8.4, 5.6, 46.6]
+            },
+            {
+                "unidad": "UMF 31",
+                "indicador": [12, 97.1, 4.1, 57.7, 17.9, 0, 0, 10.3, 18.4, 0, 38.1, 0, 0, 14.4, 33.3, 98.1, 480, 44.9, 100.0, 92.2, 875.3, 28.2, 0, 147.2]
+            },
+            {
+                "unidad": "UMF 35",
+                "indicador": [9, 79.7, 5.8, 48.4, 22.7, 16.8, 5.6, 9.5, 10.4, 11.2, 50.4, 0, 11.2, 22.0, 6.9, 71.3, 261.9, 48.9, 35.0, 91.7, 147.8, 31.1, 10.4, 78.6]
+            },
+            {
+                "unidad": "UMF 29",
+                "indicador": [14, 97.4, 3.2, 45.4, 20.5, 17.5, 0, 4.8, 14.7, 0, 0, 0, 0, 22.3, 20.0, 65.5, 399.7, 38.8, 62.5, 81.2, 331.9, 7.5, 0, 55.2]
+            },
+            {
+                "unidad": "UMF 15",
+                "indicador": [10, 88, 8.1, 47.7, 18.4, 0, 0, 6.4, 12.5, 0, 0, 0, 0, 13.0, 25.0, 87.3, 448.4, 47.1, 33.3, 93.7, 702.3, 16.2, 5.4, 84.7]
+            },
+            {
+                "unidad": "UMF 16",
+                "indicador": [11, 95.9, 3.2, 51.3, 18.2, 0, 0, 6.5, 14.7, 0, 0, 0, 8.6, 14.6, 5.9, 60.5, 263.6, 36.9, 25.9, 83.7, 263.6, 25.3, 3.6, 78.8]
+            },
+            {
+                "unidad": "UMF 18",
+                "indicador": [13, 93.6, 4.2, 53.5, 25.4, 28.4, 6.3, 7.7, 12.6, 12.6, 18.9, 3.2, 3.2, 20.4, 22.7, 68.4, 211.2, 46.6, 37.5, 89.9, 168.9, 37.9, 18.9, 109.4]
+            },
+            {
+                "unidad": "Delegacional",
+                "indicador": [12, 93.4, 5.3, 50.4, 20.9, 9.8, 2.5, 6.8, 13.2, 3.8, 14.9, 3.8, 6.3, 17.8, 12.0, 67.7, 313.4, 46.1, 30.6, 90.3, 335.7, 30.7, 11.8, 95.2]
+            }
         ]
     }
 }
@@ -766,12 +848,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'black', // Ejemplo de color
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
             },
-            1: {//Porcentaje API
-                umbralSuperior: 95, umbralInferior: 90,
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
-            },
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
             2: {//Índice de API / Atención Curativa
                 umbralSuperior: 10, umbralInferior: 3.5,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
@@ -919,12 +1002,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'black', // Ejemplo de color
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
             },
-            1: {//Porcentaje API
-                umbralSuperior: 95, umbralInferior: 90,
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
-            },
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
             2: {//Índice de API / Atención Curativa
                 umbralSuperior: 10, umbralInferior: 3.5,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
@@ -1072,12 +1156,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'black', // Ejemplo de color
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
             },
-            1: {//Porcentaje API
-                umbralSuperior: 95, umbralInferior: 90,
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
-            },
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
             2: {//Índice de API / Atención Curativa
                 umbralSuperior: 10, umbralInferior: 3.5,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
@@ -1225,12 +1310,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'black', // Ejemplo de color
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
             },
-            1: {//Porcentaje API
-                umbralSuperior: 95, umbralInferior: 90,
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
-            },
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
             2: {//Índice de API / Atención Curativa
                 umbralSuperior: 10, umbralInferior: 3.5,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
@@ -1378,12 +1464,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'black', // Ejemplo de color
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
             },
-            1: {//Porcentaje API
-                umbralSuperior: 95, umbralInferior: 90,
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
-            },
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
             2: {//Índice de API / Atención Curativa
                 umbralSuperior: 10, umbralInferior: 3.5,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
@@ -1531,12 +1618,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'black', // Ejemplo de color
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
             },
-            1: {//Porcentaje API
-                umbralSuperior: 95, umbralInferior: 90,
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
-            },
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
             2: {//Índice de API / Atención Curativa
                 umbralSuperior: 10, umbralInferior: 3.5,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
@@ -1684,12 +1772,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'black', // Ejemplo de color
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
             },
-            1: {//Porcentaje API
-                umbralSuperior: 95, umbralInferior: 90,
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
-            },
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
             2: {//Índice de API / Atención Curativa
                 umbralSuperior: 10, umbralInferior: 3.5,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
@@ -1837,12 +1926,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'black', // Ejemplo de color
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
             },
-            1: {//Porcentaje API
-                umbralSuperior: 95, umbralInferior: 90,
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
                 colorInferior: 'black', // Ejemplo de color
-                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
-            },
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
             2: {//Índice de API / Atención Curativa
                 umbralSuperior: 10, umbralInferior: 3.5,
                 colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
@@ -1910,7 +2000,7 @@ export const configuracionIndicadores = {
                 backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
             },
             13: {//DM 01 - Cobertura de detección de primera de Diabetes Mellitus en población derechohabiente 20+
-                umbralSuperior:22.0, umbralInferior: 17.1,
+                umbralSuperior: 22.0, umbralInferior: 17.1,
                 colorSuperior: 'rgb(255, 99, 132)',
                 colorInferior: 'black',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
@@ -1935,6 +2025,160 @@ export const configuracionIndicadores = {
             },
             17: {//EH 01 - Cobertura de detección de Hipertensión Arterial en derechiabientes de +20 años
                 umbralSuperior: 46.7, umbralInferior: 39.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            18: {//EH 02 - índice de confirmación de Hipertensión Arterial en casos sospechosos derechohabientes de +20 años.
+                umbralSuperior: 19.9, umbralInferior: 10,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            19: {//EH 04 - Porcentaje de pacientes de +20 años en control de Hipertensión Arterial en medicina familiar.
+                umbralSuperior: 65, umbralInferior: 59.9,
+                colorSuperior: 'rgba(255, 99, 132   )',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            20: {//EH 03 - Tasa de incidencia de Enfermedades Hipertensivas en derechohabientes de +20 años
+                umbralSuperior: 500, umbralInferior: 499.9,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            21: {//Tasa de mortalidad por diabetes mellitus DH 20 años y más
+                umbralSuperior: 70, umbralInferior: 69.9,
+                colorSuperior: 'rgba(255, 99, 132,0)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            22: {//Tasa de mortalidad por enfermedades hipertensivas DH 20 años y más
+                umbralSuperior: 50.6, umbralInferior: 50.5,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'white',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(40, 180, 99)']
+            },
+            23: {//CUPN 03 - Cobertura con esquemas completos de vacunación en niños de un año de edad.
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            24: {//Cobertura de detección de Tamiz Neonatal (SIAIS)
+                umbralSuperior: 95, umbralInferior: 93,
+                colorSuperior: 'rgba(255, 99, 132)',
+                colorInferior: 'blacks',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+
+            }
+        },
+        "Septiembre": {
+            0: {//CTE 01 - Productividad de Chequeo PrevenIMSS por personal de Enfermería."
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'] // Ejemplo de colores para las barras
+            },
+            1: {// Porcentaje API
+                umbralSuperior: 95, 
+                umbralInferior: 90,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Verde, amarillo, rojo
+            },            
+            2: {//Índice de API / Atención Curativa
+                umbralSuperior: 10, umbralInferior: 3.5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']        // Ejemplo de colores para las barras
+            },
+            3: {//CUPN 01 - Cobertura de Chequeo PrevenIMSS
+                umbralSuperior: 52.9, umbralInferior: 49.0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            4: {//CACU 01 - Cobertura de tamizaje de primera vez de Cáncer Cérvico Uterino en mujeres entre 25 y 64 años.
+                umbralSuperior: 22.5, umbralInferior: 16.9,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            5: {//CACU 05 - Tasa de incidencia de displasia cervical leve o moderada, en mujeres de 25 años y más.
+                umbralSuperior: 36.1, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)']
+            },
+            6: {//CACU 06 -Tasa de incidencia de displasia cervical severa y cacu in situ, en derechohabientes de +25 años
+                umbralSuperior: 50, umbralInferior: 5,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            7: {//CAMAma 01 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 40 y 49 años
+                umbralSuperior: 5.4, umbralInferior: 3.3,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de colors
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            8: {//CAMAma 02 - Cobertura de mastografía de tamizaje de primera vez en mujeres entre 50 y 69 años
+                umbralSuperior: 15.0, umbralInferior: 11.3,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)'] // Ejemplo de colores para las barras
+            },
+            9: {//CACU 04 - Tasa de incidencia de Cáncer Cérvico Uterino en mujeres de 25 años y más.
+                umbralSuperior: 5.7, umbralInferior: 0,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            10: {//CAMAma 06 - Tasa de incidencia de cáncer de Mama en mujeres derechohabientes de 25 años y más
+                umbralSuperior: 45.4, umbralInferior: 17.2,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            11: {//Tasa de mortalidad por cáncer cervicouterino ♀ 20 años y más
+                umbralSuperior: 30, umbralInferior: 4.6,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            12: {//CAMAma 09 - Tasa de mortalidad por Cáncer de Mama en mujeres derechohabientes de 25 años y más.
+                umbralSuperior: 30, umbralInferior: 10,
+                colorSuperior: 'rgb(255, 99, 132)', // Ejemplo de color
+                colorInferior: 'black', // Ejemplo de color
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)']
+            },
+            13: {//DM 01 - Cobertura de detección de primera de Diabetes Mellitus en población derechohabiente 20+
+                umbralSuperior: 24.8, umbralInferior: 19.3,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            14: {//DM 02 - índice de confirmación de Diabetes Mellitus en casos sospechosos, derechohabientes de +20 años
+                umbralSuperior: 15, umbralInferior: 9.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            15: {//DM 04 - Porcentaje de pacientes con Diabetes Mellitus de +20 años, en control adecuado
+                umbralSuperior: 40, umbralInferior: 34.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
+            },
+            16: {//DM 03 - Tasa de incidencia de Diabetes Mellitus en derechoabientes de +20 años
+                umbralSuperior: 400, umbralInferior: 399.9,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(246, 25, 21)', 'rgba(40, 180, 99)',]
+            },
+            17: {//EH 01 - Cobertura de detección de Hipertensión Arterial en derechiabientes de +20 años
+                umbralSuperior: 52.5, umbralInferior: 44.9,
                 colorSuperior: 'rgb(255, 99, 132)',
                 colorInferior: 'black',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
