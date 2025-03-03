@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const ctx = document.getElementById('productividadChart').getContext('2d');
     let chart;
 
-    // Cargar años, meses e indicadores
+    // Inicializar selects y gráfico
     inicializarSelects();
 
     // Event listeners para los selects
@@ -63,22 +63,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (chart) chart.destroy(); // Destruye el gráfico anterior para una nueva generación
 
-        // Busca la configuración del indicador seleccionado en el nuevo formato
+        // Configuración del indicador seleccionado
         const configuracionActual = configuracionIndicadores[ano][mes][indiceIndicadorSeleccionado];
 
+        // Filtrar y mapear datos
         let datosFiltrados = datos.map(item => ({
             unidad: item.unidad,
             valor: item.indicador[indiceIndicadorSeleccionado] || 0
         }));
 
-        // Filtra para eliminar los elementos con valor 0
+        // Eliminar elementos con valor 0
         datosFiltrados = datosFiltrados.filter(item => item.valor !== 0);
 
+        // Ordenar los datos de mayor a menor
         datosFiltrados.sort((a, b) => b.valor - a.valor);
 
         // Aplica los colores de las barras según los umbrales
         const backgroundColors = datosFiltrados.map(item => {
-            if (indiceIndicadorSeleccionado === 0) { // Lógica especial para el primer indicador
+            if (indiceIndicadorSeleccionado === 0) { // Lógica especial para el índice 0
                 if (item.valor > configuracionActual.umbralSuperior || item.valor <= 10) {
                     return configuracionActual.backgroundColors[0]; // Desempeño bajo
                 } else if (item.valor > 10 && item.valor < configuracionActual.umbralInferior) {
@@ -86,15 +88,27 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     return configuracionActual.backgroundColors[1]; // Desempeño esperado
                 }
+            } else if (indiceIndicadorSeleccionado === 25) { // Lógica especial para el índice 25
+                if (item.valor > configuracionActual.umbralSuperior) {
+                    return configuracionActual.backgroundColors[0]; // Desempeño bajo
+                } else if (item.valor <= configuracionActual.valorMinimoRojo) {
+                    return configuracionActual.backgroundColors[0]; // Rojo para <=10
+                } else if (item.valor >= configuracionActual.umbralInferior) {
+                    return configuracionActual.backgroundColors[1]; // Desempeño esperado
+                } else {
+                    return configuracionActual.backgroundColors[2]; // Desempeño medio
+                }
             } else {
+                // Lógica estándar para otros índices
                 if (item.valor > configuracionActual.umbralSuperior) return configuracionActual.backgroundColors[0];
                 else if (item.valor >= configuracionActual.umbralInferior) return configuracionActual.backgroundColors[1];
                 else return configuracionActual.backgroundColors[2];
             }
         });
 
-        const borderColors = backgroundColors; // Ajusta si necesitas diferentes colores de borde
+        const borderColors = backgroundColors;
 
+        // Crear el gráfico
         chart = new Chart(ctx, {
             type: 'bar',
             data: {
