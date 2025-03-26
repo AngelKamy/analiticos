@@ -1137,7 +1137,89 @@ export let datosProductividad = {
                 "unidad": "Delegacional",
                 "indicador": [12, 94.1, 5.1, 32.9, 1.8, 9.3, 2.1, 0.6, 0.9, 5.1, 35.7, 3.9, 6.3, 1.4, 28.3, 66.7, 317.3, 13.0, 31.4, 88.1, 360.3, 26.9, 11.1, 112.8, 0, 18]
             }
-        ]
+        ],
+        "Febrero": [
+            {
+                "unidad": "HGZMF 1",
+                "indicador": [12, 90.2, 5.7, 29.9, 3.7, 12.5, 8.4, 1.1, 2.7, 9.8, 32, 4.2, 5.6, 1.2, 33.3, 68.4, 321.3, 13.5, 47.7, 92.0, 419.2, 25.5, 7.6, 62.7, 0, 20]
+            },
+            {
+                "unidad": "UMF 32",
+                "indicador": [10, 94.5, 4, 45.7, 4.2, 54.2, 0, 0.0, 0.2, 19.4, 69.7, 7.7, 11.6, 2.1, 41.7, 76.8, 288.3, 16.5, 36.8, 87.9, 339.7, 20.2, 1.8, 198.8, 0, 11]
+            },
+            {
+                "unidad": "UMF 25",
+                "indicador": [13, 88.4, 6, 13.8, 2.1, 0, 0, 0.0, 0.2, 0, 0, 20.8, 10.4, 0.9, 50.0, 71.6, 177.7, 6.2, 30.0, 91.7, 182.3, 22.8, 4.6, 184.9, 0, 0]
+            },
+            {
+                "unidad": "UMFH 7",
+                "indicador": [10, 95.6, 5, 45.3, 5.2, 0, 0, 5.2, 3.7, 0, 0, 9.2, 0, 2.0, 0.0, 60.7, 420.2, 16.0, 26.7, 78.6, 617.8, 21, 8.4, 112.3, 0, 21]
+            },
+            {
+                "unidad": "HGZMF 6",
+                "indicador": [14, 97, 4.7, 36.5, 3.2, 0, 0, 0.0, 0.0, 0, 4.3, 4.3, 4.3, 1.5, 24.3, 52.8, 314.9, 14.6, 45.5, 83.2, 256.2, 46.2, 29.4, 113.1, 0, 18]
+            },
+            {
+                "unidad": "UMF 34",
+                "indicador": [16, 98.1, 3.9, 40.2, 5.3, 0, 0, 5.0, 4.3, 10.8, 43.2, 0, 10.8, 1.6, 50.0, 72.0, 264.1, 12.2, 35.0, 87.3, 331.4, 28.6, 16.8, 146.3, 0, 26]
+            },
+            {
+                "unidad": "UMF 4",
+                "indicador": [12, 93.3, 23.8, 32.7, 2.2, 0, 0, 4.0, 4.1, 0, 0, 0, 0, 1.2, 12.5, 56.0, 414.3, 14.2, 0.0, 94.3, 742, 48.2, 0, 93, 0, 0]
+            },
+            {
+                "unidad": "HGZMF 8",
+                "indicador": [12, 97.1, 4, 36.1, 4.2, 0, 0, 0.0, 0.4, 7.5, 44.9, 3.7, 15, 1.2, 31.0, 63.6, 265.4, 14.6, 23.9, 88.4, 297.7, 39.1, 11.9, 70.8, 0, 19]
+            },
+            {
+                "unidad": "UMFH 3",
+                "indicador": [21, 97.4, 4.7, 34.7, 3, 0, 0, 12.6, 13.8, 0, 0, 21.8, 0, 0.9, 7.1, 67.2, 502.1, 15.8, 0.0, 94.2, 676.3, 30.7, 10.2, 244.4, 0, 0]
+            },
+            {
+                "unidad": "UMF 26",
+                "indicador": [13, 96, 3.2, 40.1, 4.2, 0, 0, 1.6, 3.0, 0, 65.4, 0, 9.3, 1.6, 22.2, 68.9, 455.5, 12.2, 21.6, 81.0, 606, 4, 7.9, 135.8, 0, 17]
+            },
+            {
+                "unidad": "UMF 9",
+                "indicador": [16, 96.2, 5.9, 32.1, 2.5, 0, 0, 5.1, 7.7, 0, 16.7, 0, 0, 1.1, 16.7, 69.3, 428.2, 10.4, 0.0, 78.8, 551.8, 0, 0, 85.2, 0, 0]
+            },
+            {
+                "unidad": "UMF 27",
+                "indicador": [13, 94.4, 3.8, 45.4, 4.5, 0, 0, 4.0, 5.3, 0, 0, 0, 0, 1.7, 22.2, 76.1, 409.6, 13.6, 25.0, 86.8, 360.8, 24.4, 9.8, 133.4, 0, 0]
+            },
+            {
+                "unidad": "UMF 37",
+                "indicador": [14, 92.4, 3.7, 40.1, 6.1, 0, 0, 4.1, 5.4, 0, 53.6, 0, 5.4, 1.6, 37.5, 56.8, 396.6, 14.3, 22.2, 91.2, 248.2, 17.9, 7.7, 52.2, 0, 20]
+            },
+            {
+                "unidad": "UMF 31",
+                "indicador": [15, 85.8, 4.6, 41.1, 1.7, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0.5, 75.0, 84.6, 421.3, 9.1, 54.6, 79.4, 992.1, 13.6, 13.6, 205.3, 0, 0]
+            },
+            {
+                "unidad": "UMF 35",
+                "indicador": [12, 87.1, 4.2, 33.1, 6.9, 15.3, 10.2, 5.1, 6.1, 15.3, 102.1, 20.4, 15.3, 2.0, 36.0, 66.6, 246.5, 14.4, 52.9, 85.0, 191.5, 23.9, 19.1, 79.3, 0, 18]
+            },
+            {
+                "unidad": "UMF 29",
+                "indicador": [22, 97.1, 2.7, 32.9, 2.2, 0, 0, 7.7, 8.0, 0, 0, 0, 0, 0.9, 15.4, 74.8, 423.4, 8.0, 22.7, 80.2, 409, 0, 0, 77.6, 0, 0]
+            },
+            {
+                "unidad": "UMF 15",
+                "indicador": [11, 83.8, 6.3, 28.7, 3.6, 0, 0, 0.0, 0.2, 0, 0, 0, 0, 1.4, 50.0, 76.4, 658.3, 14.8, 0.0, 91.1, 781.8, 15.4, 15.4, 117.8, 0, 0]
+            },
+            {
+                "unidad": "UMF 16",
+                "indicador": [13, 97.5, 2.8, 32.3, 4, 0, 0, 0.1, 0.9, 0, 0, 0, 15.7, 0.8, 30.8, 63.4, 280.9, 9.3, 40.0, 88.3, 307.3, 19.8, 9.9, 81.8, 0, 14]
+            },
+            {
+                "unidad": "UMF 18",
+                "indicador": [15, 95.1, 4.4, 36.6, 4, 2.9, 0, 2.3, 2.5, 5.9, 53.1, 0, 2.9, 1.5, 43.1, 70.0, 229.5, 10.3, 27.6, 90.4, 189.9, 45.1, 23.2, 163.7, 0, 19]
+            },
+            {
+                "unidad": "Delegacional",
+                "indicador": [13, 93.9, 4.4, 35.5, 4.2, 8.1, 2.4, 2.2, 2.9, 6.6, 36.6, 4.5, 7.2, 1.4, 33.8, 66.6, 321.6, 13.0, 32.1, 88.3, 364.3, 27.2, 12, 112.8, 0, 19]
+            }
+        ],
     }
 }
 
@@ -3366,7 +3448,13 @@ export const configuracionIndicadores = {
                 colorSuperior: 'rgba(255, 99, 132)',
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
-
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Marzo": {
@@ -3521,7 +3609,13 @@ export const configuracionIndicadores = {
                 colorSuperior: 'rgba(255, 99, 132)',
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
-
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Abril": {
@@ -3677,6 +3771,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
 
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Mayo": {
@@ -3832,6 +3933,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
 
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Junio": {
@@ -3987,6 +4095,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
 
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Julio": {
@@ -4142,6 +4257,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
 
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Agosto": {
@@ -4297,6 +4419,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
 
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Septiembre": {
@@ -4452,6 +4581,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
 
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Octubre": {
@@ -4607,6 +4743,13 @@ export const configuracionIndicadores = {
                 colorInferior: 'blacks',
                 backgroundColors: ['rgba(40, 180, 99)', 'rgba(253, 250, 53)', 'rgba(246, 25, 21)']
 
+            },
+            25: {//CTE 02 - Productividad de Atención Integral por personal de Enfermería Especialista en Medicina de Familia
+                umbralSuperior: 20, umbralInferior: 14,
+                colorSuperior: 'rgb(255, 99, 132)',
+                colorInferior: 'black',
+                backgroundColors: ['rgba(246, 25, 21)', 'rgba(40, 180, 99)', 'rgba(253, 250, 53)'],
+                valorMinimoRojo: 10 // Umbral adicional para definir valores <= 10 como rojo
             }
         },
         "Noviembre": {
